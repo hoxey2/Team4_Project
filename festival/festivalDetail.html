@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>축제상세</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://korean.visitkorea.or.kr/resources/images/favicon.ico">
+    <link rel="stylesheet" href="/festival/css/reset.css">
+    <link rel="stylesheet" href="/festival/css/festival.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=619be0633be3c41159b3840f698b0688"></script>
+
+</head>
+
+<body>
+    <header id="header" class="header"></header>
+    <main id="main" class="main">
+        <section class="festivalDetail_title_box">
+            <!--json-->
+        </section>
+        <section class="festivalDetail_post_wrap">
+            <h3 class="screen_out">포스트</h3>
+            <div>
+                <span class="festival_postLike">좋아요</span>
+                <span class="festival_postView">조회수</span>
+            </div>
+            <div>
+                <button class="festivalDetail_postBook" type="button">북마크</button>
+                <button class="festivalDetail_postPrint" type="button">프린트</button>
+                <button class="festivalDetail_postShare" type="button">공유하기</button>
+            </div>
+        </section>
+        <section class="festivalDetail_info_wrap">
+            <h3 class="screen_out">탭메뉴</h3>
+            <div class="festivalDetail_tab_box">
+                <a href="#festivalDetail_img_box">사진보기</a>
+                <a href="#festivalDetail_text_box">상세정보</a>
+                <a href="#user_expression">좋아요</a>
+                <a href="#festivalDetail_recommend_wrap">추천여행</a>
+            </div>
+            <h3 class="screen_out">축제사진</h3>
+
+            <div class="festivalDetail_slide_wrap">
+                <div class="slide_wrapper">
+                    <ul class="slides">
+                        <!--json-->
+                    </ul>
+                </div>
+                <p class="controls">
+                    <span class="prev">prev</span>
+                    <span class="next">next</span>
+                </p>
+            </div>
+            <div id="festivalDetail_text_box" class="festivalDetail_text_box">
+                <h3>상세정보</h3>
+                <div>
+                    <p>
+                        한강달빛야시장은 국내 최고의 푸드트럭들이 선보이는 먹거리, 수준 높은 수공예품, 다양한 공연까지 다양한 즐거움이 있는 서울형 야시장이다. 한강의 낭만적인 야경 배경으로
+                        문화와
+                        예술, 식도락을 즐길 수 있다. 가족, 친구와 함께 먹거리를 함께 즐기며 다양한 공연, 볼거리도 준비 되어 있으니 좋은 만남의 장이 될 수 있다.
+                    </p>
+                    <p>※ 행사지의 주차장이 협소하오니 대중교통을 이용해 주시기 바랍니다.</p>
+                    <p>● 9월 16일 (토) - 10월 22일 (일) 중 매주 토·일 여의도한강공원 개장 예정</p>
+
+                    <h4>[행사내용]</h4>
+                    <p>2023년 한강달빛야시장에서는 푸드트럭 39팀과 일반 상인 60팀(총 99팀)이 함께한다. 한강공원의 아름다운 야경을 배경으로 다양한 먹거리, 수공예 상품, 체험 프로그램과
+                        함께
+                        서울형 야시장을 즐겨보자.</p>
+                    <p>*푸드트럭 40팀, *수공예 상인 50팀, *체험 프로그램</p>
+                </div>
+            </div>
+            <div id="festivalDetail_map">
+            </div>
+            <div id="festivalDetail_detailInfo_box" class="festivalDetail_detailInfo_box">
+                <!--json-->
+            </div>
+        </section>
+        <section id="user_expression" class="user_expression">
+            <div class="txt">
+                <strong id="uriTitle">해당 축제가 마음에 드시나요?</strong>
+                <p>평가를 해주시면 개인화 추천 시 활용하여 최적의 여행지를 추천해 드리겠습니다.</p>
+            </div>
+            <div class="form">
+                <span class="good">
+                    <input type="radio" id="expressionForm01" name="userExpression">
+                    <label for="expressionForm01" onclick="clickUserExpressionLog()">좋아요!</label>
+                </span>
+                <span class="not">
+                    <input type="radio" id="expressionForm02" name="userExpression">
+                    <label for="expressionForm02" onclick="clickNotLikeExpression()">별로예요</label>
+                </span>
+            </div>
+        </section>
+
+        <h3 class="festivalDetail_recommend_title">유사한 여행지 추천</h3>
+        <section id="festivalDetail_recommend_wrap" class="festivalDetail_recommend_wrap">
+            <div class="festivalDetail_recommendImg_box">
+                <div><img src="/festival/images/detailimg01.jpg" alt=""></div>
+                <div><img src="/festival/images/detailimg01.jpg" alt=""></div>
+            </div>
+            <div class="festivalDetail_recommendImg_box">
+                <div><img src="/festival/images/detailimg01.jpg" alt=""></div>
+                <div><img src="/festival/images/detailimg01.jpg" alt=""></div>
+            </div>
+            <div class="festivalDetail_aiImg"><img src="/festival/images/detailai.jpg" alt=""></div>
+        </section>
+    </main>
+    <footer class="footer" id="footer"></footer>
+
+    <script src="/festival/js/festivalDetail.js"></script>
+    <script src="/festival/js/slide.js"></script>
+    <script src="/festival/js/kakaomap.js"></script>
+
+</body>
+
+</html>

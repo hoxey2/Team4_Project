@@ -1,0 +1,114 @@
+.disabled{
+    display: none;
+}
+.active{
+    display: block;
+}
+.liked{
+    position: relative;
+    top: -33px
+}
+
+/*clone*/
+.pop_up_cont{
+    top: calc(50% - 220px)
+}
+.pop_up_cont .package_card_region{
+    top: 0px;
+    left: 10px;
+    width:40px;
+    height:40px;
+    font-size:14px
+}
+.pop_up_cont .liked{
+    position:relative;
+    top: -20px
+}
+.pop_up_cont .package_card_like{
+    position:absolute;
+    top:230px;
+    z-index:10000;
+    scale:0.8
+}
+.pop_up_cont .package_card_like span{
+    display: inline-block;
+    margin-right:10px
+}
+.pop_up_cont .package_card_content span::before{
+    font-size: 18px;
+    vertical-align: 1px;
+    padding: 0;
+   margin-right: 30px
+}
+.pop_up_cont .package_card_content span::after{
+    content: '|';
+    color: #88888860;
+    font-size: 18px;
+    vertical-align: 1px;
+    margin-left: 30px
+}
+.pop_up_cont .package_card_likeImg{
+    height:20px
+}
+.pop_up_cont .package_card_bgImg{
+    width: 400px;
+    height: 300px
+}
+.pop_up_cont .package_card_text{
+    width: 400px;
+    height: 100%;
+    background: #fff;
+	margin-top: -50px;
+}
+.pop_up_cont .package_card_title{
+    font-size: 18px;
+    padding: 10px;
+    
+}
+.pop_up_cont .package_card_bgImg{
+    cursor:auto
+}
+.pop_up_cont .package_card_bgImg .bg_dark{
+    position:absolute;
+    top:220px;
+    width:100%;
+    height:40px;
+    background:#00000090
+}
+.pop_up_cont .package_card_text{
+    cursor:auto
+}
+.pop_up_cont .package_card_text p{
+    display: block;
+    color: gray;
+    position: relative;
+    font-size: 13px;
+    line-height:1.2rem;
+    padding: 10px 10px;
+    border-top: 1px dashed #99999980;
+    border-bottom: 1px dashed #99999980;
+    box-sizing: border-box;
+}
+.pop_up_cont .package_card_content{
+    position: relative;
+    justify-content: space-between;
+    width: 400px;
+    height: 100%;
+    font-size: 16px;
+    border: 0 none;
+    box-sizing: border-box;
+    padding: 0 30px;
+    margin: 0;
+    border: 0 none;
+    outline: 0 none;
+}
+.pop_up_cont .package_card_content a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    color: #fe686a;
+}
+.pop_up_cont .package_card_content em{
+    font-size: 16px;
+}

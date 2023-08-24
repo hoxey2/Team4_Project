@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="https://korean.visitkorea.or.kr/resources/images/favicon.ico"/>
+		<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+		<title>여행지도</title>
+	</head>
+	<body>
+		<header class="header" id="header"></header>
+
+		<main class="main" id="main">
+			<div id="main_content" class="main_content">
+				<div id="travelMap" style="width: 100%; height: calc(100vh - 90px)"></div>
+				<div class="travelMap_cont_wrap">
+					<div class="travelMap_category_box">
+						<h2>여행지도</h2>
+						<div class="travelMap_category">
+							<ul class="travelMap_category_card">
+								<li>
+									<a href="#none"><img src="img/beach-icon.png" alt="beach">해변</a>
+								</li>
+								<li>
+									<a href="#none"><img src="img/nature-icon.png" alt="nature">자연</a>
+								</li>
+								<li>
+									<a href="#none"><img src="img/hotel-icon.png" alt="hotel">숙박</a>
+								</li>
+								<li>
+									<a href="#none"><img src="img/experience-icon.png" alt="experience">체험</a>
+								</li>
+								<li>
+									<a href="#none"><img src="img/camping-icon.png" alt="camping">캠핑</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="travelMap_cont_box">
+						<ul class="travelMap_cont"></ul>
+					</div>
+				</div>
+				<div class="travelMap_btn_wrap">
+					<img src="img/btn_fold.png" alt="">
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer" id="footer"></footer>
+		<script>
+			$(".header").load("../header/header.html");
+		</script>
+		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f72da0bd072e68ec84556c7f88a15af3&libraries=clusterer"></script>
+
+		<script src="js/kakaoMap.js"></script>
+		<script src="js/function.js"></script>
+	</body>
+</html>

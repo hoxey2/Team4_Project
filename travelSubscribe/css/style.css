@@ -1,0 +1,328 @@
+.main{
+    width: 1903px;
+    margin: auto;
+}
+/* hotEvent */
+.travelSubscribe_hotEvent_container{
+    margin: auto;
+    position: relative;
+    width: 100%;
+    height: 850px;
+    background: #f3f2f8 url(../img/bg_subscription_application.gif) 50% 0 no-repeat;
+}
+.travelSubscribe_hotEvent_wrap{
+    position: relative;
+    width: 1280px;
+    height: 850px;
+    margin: auto;
+}
+/* 대한민국 구석구석 핫플 정기 배송 */
+.travelSubscribe_hotEvent_wrap>img:first-child{
+    width: 440px;
+    position: absolute;
+    top: 180px;
+    left: 420px;
+}
+.travelSubscribe_hotEvent_wrap>img:nth-child(3){
+    width: 130px;
+    position: absolute;
+    top: calc(50% - 240px);
+    left: 300px;
+}
+.travelSubscribe_hotEvent_wrap>img:nth-child(4){
+    position: absolute;
+    bottom: 0;
+    left: 270px;
+}
+/* MISSION */
+.travelSubscribe_hotEvent_missionIcon{
+    position: absolute;
+    top: 70px;
+    right: 120px;
+}
+/* 가볼래-터 */
+.travelSubscribe_hotEvent_box{
+    position: absolute;
+    top: 250px;
+    left: 340px;
+    width: 600px;
+    height: 162.2px;
+}
+.travelSubscribe_hotEvent_box > img{
+    width: 100%;
+    position: absolute;
+}
+/* 지금 바로 구독하기*/
+.travelSubscribe_hotEvent_subcribeBtn{
+    position: absolute;
+    right: 0;
+    bottom: 70px;
+}
+.travelSubscribe_hotEvent_imgCut{
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.travelSubscribe_hotEvent_rightArrow{
+    width: 52px;
+    height: 29px;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}
+
+/*  movingText */
+.travelSubscribe_movingText{
+    position: relative; 
+    display: flex;
+}
+.travelSubscribe_movingText_wrap{
+    margin: auto;
+    width: 100%;
+    height: 70px;
+    background: #1cfb9a;
+    overflow: hidden;
+}
+.travelSubscribe_movingText_text{
+    font-size: 20px;
+    font-weight: 100;
+    color: #333;
+    line-height: 70px;
+    padding-right: 25px;
+}
+
+/* slider */
+.travelSubscribe_try{
+    margin: auto;
+    width: 100%;
+    height: 1100px;
+    background: #f3f2f8 url(../img/bg_taster.gif) repeat-x;
+}
+.travelSubscribe_try_title{
+    width: 1280px;
+    height: 154px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+.travelSubscribe_try_title em{
+    color: #FFFFFF;
+    font-size: 26px;
+    font-weight: lighter;
+    letter-spacing: -1.3px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+.travelSubscribe_try_title strong{
+    color: #FFFFFF;
+    font-size: 55px;
+    display: inline-block;
+    font-weight: 800;
+    line-height: 59px;
+    letter-spacing: -4px;
+}
+.travelSubscribe_tryTitle_img{
+    vertical-align: -8px;
+    margin-left: 15px;
+    width: 55px;
+    height: 55px;
+    visibility: hidden;
+}
+.travelSubscribe_trySliderImg_conatainer{
+    position: relative;
+    width: 630px;
+    height: 850px;
+    margin: auto;
+    overflow: hidden;
+}
+.travelSubscribe_trySliderImg_wrap{
+    width: 1890px;
+    height: 530px;
+    display: flex;
+}
+.travelSubscribe_trySliderImg_box{
+    position: relative;
+}
+.travelSubscribe_trySliderImg_box img{
+    width: 630px;
+}
+.travelSubscribe_trySliderImg_contBox{
+    width: 630px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    position: absolute;
+    top: 530px;
+}
+.travelSubscribe_trySliderImg_contBox p{
+    font-size: 20px;
+    word-break: keep-all;
+    line-height: 30px;
+    margin-bottom: 15px;
+    color: #555;
+}
+.travelSubscribe_trySliderImg_contBox a{
+    font-size: 16px;
+    color: #555;
+}
+.travelSubscribe_trySliderImg_contBox a svg{
+    padding-left: 5px;
+}
+.travelSubscribe_trySlider_prevBtn{
+    width: 74px;
+    height: 74px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+}
+.travelSubscribe_trySlider_nextBtn{
+    width: 74px;
+    height: 74px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+}
+.travelSubscribe_trySlider_nextBtn img{
+    position: relative;
+    bottom: 74px;
+}
+/* mission */
+.travelSubscribe_mission_wrap{
+    margin: auto;
+    width: 100%;
+    height: 1035px;
+    background: #F3F2F8;
+    position: relative;
+    text-align: center;
+}
+.travelSubscribe_mission_icon{
+    position: absolute;
+    top: 30px;
+    right: calc(50% - 100px);
+    visibility: hidden;
+}
+.travelSubscribe_mission_btn{
+    display: inline-block;
+    width: 501px;
+    height: 68px;
+    position: absolute;
+    bottom: 93px;
+    text-indent: -9999px;
+    left: 700px;
+}
+
+/* level benefit */
+.travelSubscribe_img_wrap{
+    position: relative;
+    margin: auto;
+    width: 640px;
+    height: 243px;
+}
+.travelSubscribe_img_tit03{
+    visibility: hidden;
+}
+.travelSubscribe_levelBenefit_wrap{ 
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 1044px;
+    background: #7256FD;
+    text-align: center;
+}
+.travelSubscribe_levelBenefit_wrap div img:nth-child(2){
+    position: absolute;
+    right: 70px;
+    top: 87px;
+}
+.travelSubscribe_levelBenefit_wrap button{
+    position: absolute;
+    left: calc(50% - 240px);
+    bottom: 150px;
+    width: 430px;
+    height: 100px;
+    text-indent: -9999px;
+    background: url(../img/btn_level01.png) no-repeat;
+}
+/* float button */
+.travelSubscribe_floatBtn_wrap{
+    right: -138px;
+    bottom: 90px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+.travelSubscribe_floatBtn_wrap img{
+    width: 138px;
+    height: 120px;
+}
+.travelSubscribe_floatBtn_wrap img:first-child{
+    margin-bottom: 25px;
+}
+
+/* pop animation class */
+.pop{
+    visibility:visible;
+    animation-name: pop;
+    animation-duration: 0.5s;
+}
+@keyframes pop{
+    0% {scale: 0;}
+    50% {scale: 1.4}
+    100% {scale: 1}
+}
+/* swiper */
+.swiper {
+    width: 600px;
+    height: 850px;
+  }
+.swiper-button-prev{
+    background-color: #000;
+    opacity: 0.5;
+    padding: 50px 10px;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /* border-radius: 15px; */
+    color: white !important;
+    position: absolute;
+    top: 260px !important;
+    left: calc(50% - 500px) !important;
+}
+.swiper-button-next{
+    background-color: #000;
+    opacity: 0.5;
+    padding: 50px 10px;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    /* border-radius: 15px; */
+    color: white !important;
+    position: absolute;
+    top: 260px !important;
+    right: calc(50% - 500px) !important;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after{
+    font-size: 25px !important;
+    font: 500 !important;
+}
+.swiper-scrollbar{
+    position: absolute;
+    top: 750px !important;
+}

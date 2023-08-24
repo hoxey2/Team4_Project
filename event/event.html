@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://korean.visitkorea.or.kr/resources/images/favicon.ico">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="./js/event.js"></script>
+    <script src="./js/easyPagination.js"></script>
+</head>
+
+<body>
+    <header class="header" id="header"></header>
+    <main class="main">
+        <div class="event_main_banner">
+            <h2 class="event_main_text">이벤트</h2>
+        </div>
+        <div class="event_subGnb_wrap">
+            <div class="event_subGnbContent_wrap">
+                <ul class="event_subGnbList">
+                    <li class="event_subGnbListFirstItem">
+                        <a class="event_subGnbListFirstItemLink" href="/index.html">
+                            <img src="images/home_ic.jpg" alt="메인 페이지로">
+                        </a>
+                    </li>
+                    <li class="event_subGnbListItem">
+                        <span class="event_subGnbListItemText">행사</span>
+                    </li>
+                    <a class="event_subGnbListItemLink" href="#none">
+                        <li class="event_subGnbListItem" id="event_gnb_li"> <span
+                                style="color: #5289e6; border-bottom: 1px solid #5289e6;">이벤트 ▾</span>
+                            <ul id="event_ul">
+                                <a href="/festival/festival.html">
+                                    <li class="event_ho">축제</li>
+                                </a>
+                            </ul>
+                            <!-- <span class="event_subGnbListItemLinkText"></span>
+                        <i class="fa-solid fa-caret-down event_subGnbListItemLinkTriangle"></i> -->
+                        </li>
+                    </a>
+                </ul>
+                <div class="event_subGnbSns_box">
+                    <ul class="event_subGnbSnsFuncList">
+                        <li class="event_subGnbSnsFuncListItem">
+                            <a href="mailto:recipient@example.com?subject=Subject&body=Body">
+                                <img src="images/mail_ic.png" alt="">
+                            </a>
+                        </li>
+                        <li class="event_subGnbSnsFuncListItem">
+                            <a href="#none">
+                                <img onclick="window.print()" src="images/print_ic.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="event_subGnbSnsList">
+                        <li class="event_subGnbSnsListItem event_subGnbSnsListItem--noMargin">
+                            <a href="#none">
+                                <img id="event_url" class="event_subGnbSnsListItemLinkImg" src="images/copy2_ic.png"
+                                    alt="">
+                            </a>
+                        </li>
+                        <li class="event_subGnbSnsListItem">
+                            <a
+                                href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fggtour.or.kr%252Fcommunity%252FeventList.php%253Ftsort%253D4%2526msort%253D158&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=ko_KR">
+                                <img class="event_subGnbSnsListItemLinkImg" src="images/face_ic.png" alt="">
+                            </a>
+                        </li>
+                        <li class="event_subGnbSnsListItem">
+                            <a
+                                href="https://twitter.com/intent/tweet?count=horizontal&text=%EC%9D%B4%EB%B2%A4%ED%8A%B8%3A%20%EA%B2%BD%EA%B8%B0%EA%B4%80%EA%B4%91%EB%88%84%EB%A6%AC%EC%A7%91&url=https%3A%2F%2Fggtour.or.kr%2Fcommunity%2FeventList.php%3Ftsort%3D4%26msort%3D158">
+                                <img class="event_subGnbSnsListItemLinkImg" src="images/twi_ic.png" alt="">
+                            </a>
+                        </li>
+                        <li class="event_subGnbSnsListItem">
+                            <a
+                                href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fstory.kakao.com%2Fshare%3Furl%3Dhttps%253A%252F%252Fggtour.or.kr%252Fcommunity%252FeventList.php%253Ftsort%253D4%2526msort%253D158#login">
+                                <img class="event_subGnbSnsListItemLinkImg" src="images/kakao_ic.png" alt="">
+                            </a>
+                        </li>
+                        <li class="event_subGnbSnsListItem">
+                            <a
+                                href="https://share.naver.com/web/shareView.nhn?url=https%3A%2F%2Fggtour.or.kr%2Fcommunity%2FeventList.php%3Ftsort%3D4%26msort%3D158&title=%EC%9D%B4%EB%B2%A4%ED%8A%B8%3A%20%EA%B2%BD%EA%B8%B0%EA%B4%80%EA%B4%91%EB%88%84%EB%A6%AC%EC%A7%91">
+                                <img class="event_subGnbSnsListItemLinkImg" src="images/naver_ic.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="event_main_content_wrap">
+            <div class="event_button_wrap">
+                <button id="ing_filter_btn" value="ing" type="button">진행중</button>
+                <button id="due_filter_btn" value="due" type="button">진행 예정</button>
+                <button id="complete_filter_btn" value="complete" type="button">진행 완료</button>
+            </div>
+            <div class="event_main_list_wrap">
+                <div class="event_main_search_box">
+                    <div class="event_main_total_content">
+                        page
+                        <!-- 동적 랜더링 -->
+                        <span> </span>
+                    </div>
+                    <div class="event_main_search_content">
+                        <label for="searchbox">제목</label><input id="searchbox" type="text" placeholder="검색어를 입력하세요.">
+                        <button type="button">검색</button>
+                    </div>
+                </div>
+                <div class="event_main_board">
+                    <!-- 리스트 동적 랜더링 -->
+                    <ul class="event_main_board_content_wrap">
+                        <!-- <li>
+                         <div class="event_content_img">
+                             <img src="images/event1.png" alt="">
+                         </div>
+                         <div class="event_content">
+                            <p class="title">2023 대한민국 관광공모전(사진) 개최</p>
+                             <p class="content">2023 대한민국 관광공모전</p>
+                             <div class="event_main_bottom">
+                                 <span class="writer">작성자</span>
+                                 <b class="createdBy">콘텐츠 관리자</b>
+                                 <span class="writerDate">작성일</span>
+                                 <span>2023-05-17</span>
+                             </div>
+                         </div>
+                     </li> -->
+                    </ul>
+                </div>
+            </div>
+            <!-- <div id="list"></div> -->
+            <div id="pagination"></div>
+        </div>
+    </main>
+    <footer class="footer"></footer>
+    <script>
+        $(".footer").load("/footer/footer.html");
+
+    </script>
+</body>
+
+</html>

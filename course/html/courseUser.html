@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로계획러가 사용자가 직접 만든 풀코스 여행</title>
+    <link rel="icon" type="image/ico" href="../images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="course_title_wrap">
+            <div class="course_titleContent_box">
+                <h2 class="course_title">추천코스</h2>
+            </div>
+        </div>
+        <div class="course_subGnb_wrap">
+            <div class="course_subGnbContent_wrap">
+                <ul class="course_subGnbList">
+                    <li class="course_subGnbListFirstItem">
+                        <a class="course_subGnbListFirstItemLink" href="#none">
+                            <img src="../images/home_ic.jpg" alt="메인 페이지로">
+                        </a>
+                    </li>
+                    <li class="course_subGnbListItem">
+                        <span class="course_subGnbListItemText">여행정보</span>
+                    </li>
+                    <li class="course_subGnbListItem">
+                        <a class="course_subGnbListItemLink" href="#none">
+                            추천코스
+                            <span class="course_subGnbListItemLinkText"></span>
+                            <i class="fa-solid fa-caret-down course_subGnbListItemLinkTriangle"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="course_subGnbSns_box">
+                    <ul class="course_subGnbSnsFuncList">
+                        <li class="course_subGnbSnsFuncListItem">
+                            <a href="#none">
+                                <img src="../images/mail_ic.png" alt="">
+                            </a>
+                        </li>
+                        <li class="course_subGnbSnsFuncListItem">
+                            <a href="#none">
+                                <img src="../images/print_ic.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="course_subGnbSnsList">
+                        <li class="course_subGnbSnsListItem course_subGnbSnsListItem--noMargin">
+                            <a href="#none">
+                                <img class="course_subGnbSnsListItemLinkImg" src="../images/copy2_ic.png" alt="">
+                            </a>
+                        </li>
+                        <li class="course_subGnbSnsListItem">
+                            <a href="#none">
+                                <img class="course_subGnbSnsListItemLinkImg" src="../images/face_ic.png" alt="">
+                            </a>
+                        </li>
+                        <li class="course_subGnbSnsListItem">
+                            <a href="#none">
+                                <img class="course_subGnbSnsListItemLinkImg" src="../images/twi_ic.png" alt="">
+                            </a>
+                        </li>
+                        <li class="course_subGnbSnsListItem">
+                            <a href="#none">
+                                <img class="course_subGnbSnsListItemLinkImg" src="../images/kakao_ic.png" alt="">
+                            </a>
+                        </li>
+                        <li class="course_subGnbSnsListItem">
+                            <a href="#none">
+                                <img class="course_subGnbSnsListItemLinkImg" src="../images/naver_ic.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main_content">
+            <section class="course_courseLnb_box">
+                <ul class="course_courseLnbList">
+                    <li class="course_courseLnbListItem">
+                        <a class="course_courseLnbListItemLink" href="../html/course.html">
+                            <h3 class="course_courseLnbListItemLinkTitle ">지역, 테마별 코스</h3>
+                        </a>
+                    </li>
+                    <li class="course_courseLnbListItem">
+                        <a class="course_courseLnbListItemLink" href="../html/courseUser.html">
+                            <h3 class="course_courseLnbListItemLinkTitle course_courseLnbListItemLinkTitle--blue">프로계획러 사용자가 직접 만든 풀코스 여행</h3>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="courseUser_banner_wrap">
+                <div class="courseUser_bannerContent_box">
+                    <img class="courseUser_bannerImg" src="../images/professional_planner.png" alt="">
+                </div>
+            </section>
+            <section class="courseUser_filter_wrap">
+                <div class="courseUser_filterContent_box">
+                    <ul class="courseUser_filterList">
+                        <li class="courseUser_filterListItem">
+                            <a class="courseUser_filterListItemLink" data-category="family" href="#none">
+                                <span class="courseUser_filterListItemLinkText">가족코스</span>
+                            </a>
+                        </li>
+                        <li class="courseUser_filterListItem">
+                            <a class="courseUser_filterListItemLink" data-category="alone" href="#none">
+                                <span class="courseUser_filterListItemLinkText">혼자여행</span>
+                            </a>
+                        </li>
+                        <li class="courseUser_filterListItem">
+                            <a class="courseUser_filterListItemLink" data-category="walk" href="#none">
+                                <span class="courseUser_filterListItemLinkText">도보코스</span>
+                            </a>
+                        </li>
+                        <li class="courseUser_filterListItem">
+                            <a class="courseUser_filterListItemLink" data-category="healing" href="#none">
+                                <span class="courseUser_filterListItemLinkText">힐링코스</span>
+                            </a>
+                        </li>
+                        <li class="courseUser_filterListItem">
+                            <a class="courseUser_filterListItemLink" data-category="food" href="#none">
+                                <span class="courseUser_filterListItemLinkText">맛코스</span>
+                            </a>
+                        </li>
+                        <li class="courseUser_filterListItem">
+                            <a class="courseUser_filterListItemLink" data-category="camping" href="#none">
+                                <span class="courseUser_filterListItemLinkText">캠핑코스</span>
+                            </a>
+                        </li>
+                        <li class="courseUser_filterListItem">
+                            <a class="courseUser_filterListItemLink" data-category="pet" href="#none">
+                                <span class="courseUser_filterListItemLinkText">반려동물과 함께</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="courseUser_filterBarList">
+                        <li class="courseUser_filterBarListItem">
+                            <a data-duration="all" class="courseUser_filterBarListItemLink" href="#none">
+                                <span class="courseUser_filterBarListItemLinkText">전체</span>
+                            </a>
+                        </li>
+                        <li class="courseUser_filterBarListItem">
+                            <a data-duration="dayTrip" class="courseUser_filterBarListItemLink" href="#none">
+                                <span class="courseUser_filterBarListItemLinkText">당일여행</span>
+                            </a>
+                        </li>
+                        <li class="courseUser_filterBarListItem">
+                            <a data-duration="1N2D" class="courseUser_filterBarListItemLink" href="#none">
+                                <span class="courseUser_filterBarListItemLinkText">1박 2일</span>
+                            </a>
+                        </li>
+                        <li class="courseUser_filterBarListItem">
+                            <a data-duration="2N3D" class="courseUser_filterBarListItemLink" href="#none">
+                                <span class="courseUser_filterBarListItemLinkText">2박 3일 이상</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="courseUser_content_wrap">
+                <div class="courseUser_content_box">
+                    <ul class="courseUser_contentList">
+                        <!-- <li class="courseUser_contentListItem">
+                            <img class="courseUser_contentListItemBackgroundImg" src="../images/busan.jpg">
+                            <div class="courseUser_contentListItemCover_box">
+                                <a href="#none">
+                                    <strong class="courseUser_contentListItemCoverTitle">부산 여행</strong>
+                                    <p class="courseUser_contentListItemCoverRegion">
+                                    지역 :
+                                    <span>부산 서구</span>
+                                    </p>
+                                    <p class="courseUser_contentListItemCoverDistance">
+                                        총거리 :
+                                        <span>63.7km</span>
+                                    </p>
+                                </a>
+                                <div class="courseUser_contentListItemCoverUser_box">
+                                    <img class="courseUser_contentListItemCoverUserImg" src="../images/img_profile.png" alt="">
+                                    <span class="courseUser_contentListItemCoverUserName">j********</span>
+                                </div>
+                                <div class="courseUser_contentListItemCoverGocourse_box">
+                                    <a class="courseUser_contentListItemCoverGocourseLink" href="#none">코스 더보기</a>
+                                </div>
+                            </div>
+                            <div class="courseUser_contentListItemInfo_box invisible">
+                                <ul class="courseUser_contentListItemInfoList">
+                                    <li class="courseUser_contentListItemInfoListItem">
+                                        <a class="courseUser_contentListItemInfoListItemLink" href="#none">부산 송도해상케이블카</a>
+                                    </li>
+                                    <li class="courseUser_contentListItemInfoListItem">
+                                        <a class="courseUser_contentListItemInfoListItemLink" href="#none">아홉산숲</a>
+                                    </li>
+                                    <li class="courseUser_contentListItemInfoListItem">
+                                        <a class="courseUser_contentListItemInfoListItemLink" href="#none">부산 부전시장</a>
+                                    </li>
+                                    <li class="courseUser_contentListItemInfoListItem">
+                                        <a class="courseUser_contentListItemInfoListItemLink" href="#none">부산 트릭아이뮤지엄</a>
+                                    </li>
+                                    <li class="courseUser_contentListItemInfoListItem">
+                                        <a class="courseUser_contentListItemInfoListItemLink" href="#none">BIFF 광장</a>
+                                    </li>
+                                    <li class="courseUser_contentListItemInfoListItem">
+                                        <a class="courseUser_contentListItemInfoListItemLink" href="#none">스파랜드 센텀시티</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </section>
+            <div class="userCourse_pageButton_wrap">
+                <div class="userCourse_pageButton_box">
+                    <button class="userCourse_pageButton userCourse_pageButton--prev">이전</button>
+                    <button class="userCourse_pageButton">1</button>
+                    <button class="userCourse_pageButton">1</button>
+                    <button class="userCourse_pageButton">1</button>
+                    <button class="userCourse_pageButton">1</button>
+                    <button class="userCourse_pageButton">1</button>
+                    <button class="userCourse_pageButton userCourse_pageButton--next">다음</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <div class="loading hidden">
+        <div class="loading_element loading--first">
+            <div class="circle circle--red"></div>
+        </div>
+        <div class="loading_element loading--second">
+            <div class="circle circle--blue"></div>
+        </div>
+        <div class="loading_element loading--third">
+            <div class="circle circle--green"></div>
+        </div>
+        <div class="loading_element loading--fourth">
+            <div class="circle circle--yellow"></div>
+        </div>        
+    </div>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script>
+        const loadingPage = document.querySelector('.loading');
+        
+        // 선택 상태를 나타내는 변수 정의
+        // 선택된 카테고리
+        let currentCategory;
+        // 선택된 여행 기간
+        let currentDuration;
+        // AJAX 호출 후 받은 데이터를 담을 배열
+        let dataArray;
+        // 필터된 데이터를 받을 배열
+        let filteredData;
+        // 여행 일수에 대한 필터를 거친 데이터를 받을 배열
+        let durationFilteredData
+
+        // 페이지 내부 요소들 정의
+        // 카테고리 선택 버튼 요소
+        const userCourseCategoryButtons = document.querySelectorAll('.courseUser_filterListItemLink');
+        // 여행기간 선택 버튼 요소
+        const userCourseDurationButtons = document.querySelectorAll('.courseUser_filterBarListItemLink')
+        // 유저가 선택한 코스 아이템
+        const userCourseListItems = document.querySelectorAll('.courseUser_contentListItem');
+        // 코스 더보기 버튼
+        const userCourseMoreBottons = document.querySelectorAll('.courseUser_contentListItemCoverGocourseLink');
+        // 코스 첫 화면
+        const userCourseProfiles = document.querySelectorAll('.courseUser_contentListItemCover_box');
+        // 코스에서 유저가 더보기를 클릭했을 때 화면
+        const userCourseRoutes = document.querySelectorAll('.courseUser_contentListItemInfo_box');
+        // 페이지네이션 버튼 박스
+        const buttonBox = document.querySelector('.userCourse_pageButton_box');
+
+        
+        // 페이지 네이션에 필요한 변수
+        const itemsPerPage = 5;
+        let currentPage = 1;
+
+        // AJAX로 데이터 가져오는 함수
+        async function getFetchedData(){
+            const response = await fetch('https://raw.githubusercontent.com/BHWwonderful/TravelData/master/UserCourse.json');
+            const jsonData = await response.json();
+            dataArray = jsonData;
+        }
+
+        userCourseCategoryButtons.forEach((userCourseCategoryButton, index)=>{
+            userCourseCategoryButton.addEventListener('click', async function(event){
+                loadingPage.classList.remove('hidden');
+                userCourseCategoryButtons.forEach((categoryButton, buttonIndex)=>{
+                    if(buttonIndex === index){
+                        categoryButton.classList.add('courseUser_filterListItemLink--on');
+                    } else{
+                        categoryButton.classList.remove('courseUser_filterListItemLink--on');
+                    }
+                })
+                userCourseDurationButtons.forEach((durationButton, buttonIndex)=>{
+                    durationButton.classList.remove('courseUser_filterBarListItemLink--on');
+                })
+                userCourseDurationButtons[0].classList.add('courseUser_filterBarListItemLink--on');
+                currentCategory=index;
+                event.preventDefault();
+                grid.innerHTML='';
+                currentPage = 1;
+                const dataCategory = userCourseCategoryButton.getAttribute('data-category');
+                await getFetchedData();
+                filteredData = dataArray.filter(data => data.category === dataCategory);
+                const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+                createPageButtons(totalPages);
+                renderHTML(filteredData);
+                loadingPage.classList.add('hidden');
+            })
+        })
+
+        userCourseDurationButtons.forEach((userCourseDurationButton, index)=>{
+            userCourseDurationButton.addEventListener('click', function(){
+                userCourseDurationButtons.forEach((durationButton, buttonIndex)=>{
+                    if(buttonIndex === index){
+                        durationButton.classList.add('courseUser_filterBarListItemLink--on');
+                    } else{
+                        durationButton.classList.remove('courseUser_filterBarListItemLink--on');
+                    }
+                })
+                currentDuration=index;
+                grid.innerHTML='';
+                if(currentCategory==0){
+                    switch (currentDuration){
+                        case 0:
+                            currentPage=1;
+                            renderHTML(filteredData);
+                            break;
+
+                        case 1:
+                            currentPage=1;
+                            durationFilteredData = filteredData.filter(object => object.duration == currentDuration);
+                            renderHTML(durationFilteredData);
+                            break;
+                        
+                        case 2:
+                            currentPage=1;
+                            durationFilteredData = filteredData.filter(object => object.duration == currentDuration);
+                            renderHTML(durationFilteredData);
+                            break;
+
+                        case 3:
+                            currentPage=1;
+                            durationFilteredData = filteredData.filter(object => object.duration == currentDuration);
+                            renderHTML(durationFilteredData);
+                            break;
+                    }
+                } else if(currentCategory == 1){
+                    switch (currentDuration){
+                        case 0:
+                            currentPage=1;
+                            renderHTML(filteredData);
+                            break;
+
+                        case 1:
+                            currentPage=1;
+                            durationFilteredData = filteredData.filter(object => object.duration == currentDuration);
+                            renderHTML(durationFilteredData);
+                            break;
+                        
+                        case 2:
+                            currentPage=1;
+                            durationFilteredData = filteredData.filter(object => object.duration == currentDuration);
+                            renderHTML(durationFilteredData);
+                            break;
+
+                        case 3:
+                            currentPage=1;
+                            durationFilteredData = filteredData.filter(object => object.duration == currentDuration);
+                            renderHTML(durationFilteredData);
+                            break;
+                    }
+                } else if(currentCategory == 2){
+                    switch (currentDuration){
+                        case 0:
+                            currentPage=1;
+                            renderHTML(filteredData);
+                            break;
+
+                        case 1:
+                            currentPage=1;
+                            durationFilteredData = filteredData.filter(object => object.duration == currentDuration);
+                            renderHTML(durationFilteredData);
+                            break;
+                        
+                        case 2:
+                            currentPage=1;
+                            durationFilteredData = filteredData.filter(object => object.duration == currentDuration);
+                            renderHTML(durationFilteredData);
+                            break;
+
+                        case 3:
+                            currentPage=1;
+                            durationFilteredData = filteredData.filter(object => object.duration == currentDuration);
+                            renderHTML(durationFilteredData);
+                            break;
+                    }
+                } else if(currentCategory == 3){
+                    switch (currentDuration){
+                        case 0:
+                            currentPage=1;
+                            renderHTML(filteredData);
+                            break;
+
+                        case 1:
+                            currentPage=1;
+                            durationFilteredData = filteredData.filter(object => object.duration == currentDuration);
+                            renderHTML(durationFilteredData);
+                            break;
+                        
+                        case 2:
+                            currentPage=1;
+                            durationFilteredData = filteredData.filter(object => object.duration == currentDuration);
+                            renderHTML(durationFilteredData);
+                            break;
+
+                        case 3:
+                            currentPage=1;
+                            durationFilteredData = filteredData.filter(object => object.duration == currentDuration);
+                            renderHTML(durationFilteredData);
+                            break;
+                    }
+                } else if(currentCategory == 4){
+                    switch (currentDuration){
+                        case 0:
+                            currentPage=1;
+                            renderHTML(filteredData);
+                            break;
+
+                        case 1:
+                            currentPage=1;
+                            durationFilteredData = filteredData.filter(object => object.duration == currentDuration);
+                            renderHTML(durationFilteredData);
+                            break;
+                        
+                        case 2:
+                            currentPage=1;
+                            durationFilteredData = filteredData.filter(object => object.duration == currentDuration);
+                            renderHTML(durationFilteredData);
+                            break;
+
+                        case 3:
+                            currentPage=1;
+                            durationFilteredData = filteredData.filter(object => object.duration == currentDuration);
+                            renderHTML(durationFilteredData);
+                            break;
+                    }
+                } else if(currentCategory == 5){
+                    switch (currentDuration){
+                        case 0:
+                            currentPage=1;
+                            renderHTML(filteredData);
+                            break;
+
+                        case 1:
+                            currentPage=1;
+                            durationFilteredData = filteredData.filter(object => object.duration == currentDuration);
+                            renderHTML(durationFilteredData);
+                            break;
+                        
+                        case 2:
+                            currentPage=1;
+                            durationFilteredData = filteredData.filter(object => object.duration == currentDuration);
+                            renderHTML(durationFilteredData);
+                            break;
+
+                        case 3:
+                            currentPage=1;
+                            durationFilteredData = filteredData.filter(object => object.duration == currentDuration);
+                            renderHTML(durationFilteredData);
+                            break;
+                    }
+                } else if(currentCategory == 6){
+                    switch (currentDuration){
+                        case 0:
+                            currentPage=1;
+                            renderHTML(filteredData);
+                            break;
+
+                        case 1:
+                            currentPage=1;
+                            durationFilteredData = filteredData.filter(object => object.duration == currentDuration);
+                            renderHTML(durationFilteredData);
+                            break;
+                        
+                        case 2:
+                            currentPage=1;
+                            durationFilteredData = filteredData.filter(object => object.duration == currentDuration);
+                            renderHTML(durationFilteredData);
+                            break;
+
+                        case 3:
+                            currentPage=1;
+                            durationFilteredData = filteredData.filter(object => object.duration == currentDuration);
+                            renderHTML(durationFilteredData);
+                            break;
+                    }
+                }
+            })
+        })
+
+        // 페이지별로 데이터 분할
+        function paginateData(data, currentPage, itemsPerPage){
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            return data.slice(startIndex, endIndex);
+            // 인수로 전달된 범위의 요소들을 복사하여 배열로 반환, 원본 배열은 변경되지 않는다.
+            // ex) 현재 페이지 1 : 데이터 인덱스가 0 ~ 9번 인덱스 요소를 데이터로 잡음
+            // ex) 현재 페이지 2 : 데이터 인덱스가 10 ~ 19번 인덱스 요소를 데이터로 잡음
+        }
+
+        // 페이지 버튼 생성
+        function createPageButtons(userCourseFilteredDataArray, totalPages){
+            buttonBox.innerHTML='';
+            
+            const maxButtons = 10; // 한 번에 표시할 페이지 버튼의 최대 개수
+            const maxPagesPerGroup = 10; // 그룹 당 표시할 페이지 수
+
+            let startPage = Math.floor((currentPage-1)/maxPagesPerGroup) * maxPagesPerGroup + 1;
+            // 시작 페이지 = ( ( 현제 페이지 - 1 ) / 그룹 당 표시할 페이지 수  )을 내림한 값 * 그룹 당 표시할 페이지 수 + 1;
+            // ex) 현재 페이지 : 5, {(5-1)/10} 내림한 값 = 0 * 10 + 1 = 1
+            // ex) 현재 페이지 : 19, {(19-1)/10} 내림한 값 = 1 * 10 + 1 = 11
+            let endPage = startPage + maxButtons - 1;
+            // 마지막 페이지 = 시작 페이지 + 한 번에 표시할 페이지 버튼의 최대 개수 - 1;
+            // ex) 시작 페이지 = 1, 1 + 10 - 1 = 10
+            // ex) 시작 페이지 = 11, 11 + 10 - 1 = 20
+
+            // 가장 마지막 페이지 그룹에 도달 시 마지막 페이지는 총 페이지 인덱스와 일치한다.
+            if (endPage > totalPages){
+                endPage = totalPages
+                // 만약 마지막 페이지가 총 페이지 수 보다 넘칠 경우 마지막 페이지의 인덱스는 총 페이지 인덱스와 일치한다.
+            }
+
+            // 이전 버튼 생성
+            if (currentPage > 1){ // 만약 현재 페이지가 1보다 크다면 실행한다.
+                const prevButton = document.createElement('button');
+                prevButton.className='userCourse_pageButton userCourse_pageButton--prev';
+                prevButton.textContent = '이전';
+                prevButton.addEventListener('click', ()=>{
+                    // 이전 버튼을 클릭할 시 현재 페이지 값을 1 감소시킨다.
+                    currentPage--;
+                    // 감소시킨 현재 페이지 인덱스에서 데이터를 호출한다.
+                    renderHTML(userCourseFilteredDataArray);
+                });
+                buttonBox.appendChild(prevButton);
+            }
+
+            // 페이지 버튼 생성
+            for (let i = startPage; i <= endPage; i++){
+                const button = document.createElement('button');
+                button.className='userCourse_pageButton';
+                button.textContent = i;
+
+                // 현재 페이지와 일치하는 버튼에 클래스 부여
+                if (i == currentPage){
+                    button.classList.add('userCourse_pageButton--on')
+                }
+
+                button.addEventListener('click', () => {
+                    currentPage=i;
+                    renderHTML(userCourseFilteredDataArray);
+                });
+                buttonBox.appendChild(button);
+            }
+
+            // 다음 버튼 생성
+            if (currentPage < totalPages){
+                const nextButton = document.createElement('button');
+                nextButton.className='userCourse_pageButton userCourse_pageButton--next'
+                nextButton.textContent='다음';
+                nextButton.addEventListener('click', ()=>{
+                    currentPage++;
+                    renderHTML(userCourseFilteredDataArray);
+                });
+                buttonBox.appendChild(nextButton);
+            }
+        }
+
+        function renderHTML(userCourseFilteredDataArray){
+            grid.innerHTML='';
+            const slicedData = paginateData(userCourseFilteredDataArray, currentPage, itemsPerPage);
+            slicedData.forEach((userCourseData, ind)=>{
+                const newLi = document.createElement('li');
+                newLi.className='courseUser_contentListItem';
+                newLi.insertAdjacentHTML('afterbegin', `<img class="courseUser_contentListItemBackgroundImg" src="${userCourseData.Thumbnail}">
+                        <div class="courseUser_contentListItemCover_box">
+                            <a href="#none">
+                                <strong class="courseUser_contentListItemCoverTitle">${userCourseData.Title}</strong>
+                                <p class="courseUser_contentListItemCoverRegion">
+                                    지역 :
+                                    <span>${userCourseData.지역}</span>
+                                </p>
+                                <p class="courseUser_contentListItemCoverDistance">
+                                    총거리 :
+                                    <span>${userCourseData.총거리}</span>
+                                </p>
+                            </a>
+                            <div class="courseUser_contentListItemCoverUser_box">
+                                <img class="courseUser_contentListItemCoverUserImg" src="${userCourseData.Avatar}" alt="">
+                                <span class="courseUser_contentListItemCoverUserName">${userCourseData.userInfo}</span>
+                            </div>
+                            <div class="courseUser_contentListItemCoverGocourse_box">
+                                <a class="courseUser_contentListItemCoverGocourseLink" href="#none">코스 더보기</a>
+                            </div>
+                        </div>`);
+                const newDiv = document.createElement('div');
+                const newUl = document.createElement('ul');
+                newDiv.classList.add('courseUser_contentListItemInfo_box');
+                newDiv.classList.add('invisible');
+                newUl.className='courseUser_contentListItemInfoList';
+                
+                for(let i=0; ; i++){
+                    if(i == 0){
+                        newUl.insertAdjacentHTML('beforeend', `<li class="courseUser_contentListItemInfoListItem">
+                                                <a class="courseUser_contentListItemInfoListItemLink" href="#none">${userCourseData.area_course}</a>
+                                            </li>`)
+                    } else if(userCourseData[`area_course${i}`]){
+                        newUl.insertAdjacentHTML('beforeend', `<li class="courseUser_contentListItemInfoListItem">
+                                                <a class="courseUser_contentListItemInfoListItemLink" href="#none">${userCourseData[`area_course${i}`]}</a>
+                                            </li>`)
+                    } else{
+                        break;
+                    }
+                }
+
+                newDiv.insertAdjacentElement('afterbegin', newUl);
+                newLi.insertAdjacentElement('beforeend', newDiv);
+                grid.appendChild(newLi);
+
+                var msnry = new Masonry(grid, {
+                    itemSelector: '.courseUser_contentListItem',
+                    columnWidth: 298
+                })
+
+                const userCourseListItems = document.querySelectorAll('.courseUser_contentListItem');
+                const userCourseMoreBottons = document.querySelectorAll('.courseUser_contentListItemCoverGocourseLink');
+                const userCourseProfiles = document.querySelectorAll('.courseUser_contentListItemCover_box');
+                const userCourseRoutes = document.querySelectorAll('.courseUser_contentListItemInfo_box');
+
+                userCourseListItems.forEach((userCourseListItem, number)=>{
+                    userCourseMoreBottons[number].addEventListener('click', function(event){
+                        userCourseProfiles[number].classList.add('hidden');
+                        userCourseRoutes[number].classList.remove('invisible');
+                    })
+
+                    userCourseRoutes[number].addEventListener('mouseleave', function(event){
+                        userCourseProfiles[number].classList.remove('hidden');
+                        userCourseRoutes[number].classList.add('invisible');
+                    })
+                })
+            })
+
+            const totalPages = Math.ceil(userCourseFilteredDataArray.length / itemsPerPage);
+            createPageButtons(userCourseFilteredDataArray, totalPages);
+        }
+
+        // masonary 라이브러리 초기화
+        var grid = document.querySelector('.courseUser_contentList');
+        var msnry = new Masonry(grid, {
+            itemSelector: '.courseUser_contentListItem',
+            columnWidth: 298
+        })
+
+        initializePage();
+
+        // 페이지가 로드 됐을 때 초기화
+        async function initializePage(){
+            loadingPage.classList.remove('hidden');
+            currentCategory=0;
+            grid.innerHTML='';
+            currentPage = 1;
+            await getFetchedData();
+            filteredData = dataArray.filter(data => data.category === 'family');
+            const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+            createPageButtons(totalPages);
+            renderHTML(filteredData);
+            userCourseDurationButtons[0].classList.add('courseUser_filterBarListItemLink--on');
+            userCourseCategoryButtons[0].classList.add('courseUser_filterListItemLink--on');
+            loadingPage.classList.add('hidden');
+        }
+
+    </script>
+</body>
+</html>

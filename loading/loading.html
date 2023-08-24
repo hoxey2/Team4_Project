@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loading{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            position:fixed;
+            width:100%;
+            height:100vh;
+            background-color: rgba(0,0,0,0.7)
+        }
+
+        .loading_element{
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            text-align: center;
+            position:absolute;
+            width:65px;
+            height:65px;
+            background-color: none;
+            border-radius: 100%;
+        }
+
+        .loading--first{
+            animation: spin 2.5s infinite linear;
+            animation-delay: 0.20s;
+        }
+
+        .loading--second{
+            animation: spin 2.5s infinite linear;
+            animation-delay: 0.4s;
+        }
+
+        .loading--third{
+            animation: spin 2.5s infinite linear;
+            animation-delay: 0.6s;
+        }
+
+        .loading--fourth{
+            animation: spin 2.5s infinite linear;
+            animation-delay: 0.8s;
+        }
+
+        @keyframes spin{
+            0%{
+                transform: rotate(0deg);
+            } 
+            40%{
+                transform: rotate(360deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        .circle{
+            display: inline-block;
+            width:16px;
+            height:16px;
+            border-radius: 100%;
+        }
+
+        .circle--red{
+            background-color: rgb(137, 168, 79);
+        }
+
+        .circle--blue{
+            background-color: rgb(123, 175, 212);
+        }
+
+        .circle--green{
+            background-color: rgb(220, 68, 5);
+        }
+
+        .circle--yellow{
+            background-color: rgb(166, 3, 17);
+        }
+    </style>
+</head>
+<body>
+    <div class="loading">
+        <div class="loading_element loading--first">
+            <div class="circle circle--red"></div>
+        </div>
+        <div class="loading_element loading--second">
+            <div class="circle circle--blue"></div>
+        </div>
+        <div class="loading_element loading--third">
+            <div class="circle circle--green"></div>
+        </div>
+        <div class="loading_element loading--fourth">
+            <div class="circle circle--yellow"></div>
+        </div>        
+    </div>
+    <script>
+        // 적용 방법
+        // 1. window.onload나 DOMContentLoaded를 이용하여 구현
+        // 2. loading 컨테이너에 기본 디폴트로 display:hidden을 준다음 특정 동작마다 display:flex를 부여, 이후 동작이 완료되면 display:hidden
+    </script>
+</body>
+</html>

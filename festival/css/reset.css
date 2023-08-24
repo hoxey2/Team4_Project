@@ -1,0 +1,62 @@
+        /* reset */
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        div,
+        ul,
+        li,
+        form,
+        fieldset,
+        legend,
+        label,
+        input,
+        button {
+            margin: 0;
+            padding: 0
+        }
+
+        body,
+        input,
+        button {
+            font-family: "Noto Sans Kr","나눔고딕", "맑은 고딕", sans-serif;
+            font-size: 12px;
+            line-height: 1.5
+        }
+
+        ul,
+        li {
+            list-style: none
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit
+        }
+
+        img,
+        fieldset {
+            border: 0 none
+        }
+
+        input,
+        button {
+            vertical-align: middle
+        }
+
+        button {
+            cursor: pointer
+        }
+
+        address {
+            font-style: normal
+        }
+
+        .screen_out {
+            width: 0px;
+            height: 0px;
+            overflow: hidden;
+            position: absolute;
+            margin: -1px
+        }

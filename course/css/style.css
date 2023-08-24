@@ -1,0 +1,1633 @@
+    
+
+    /* main 제목 */
+        .course_title_wrap{
+            background:url(../images/course_recommendation.jpg) repeat-x center;
+            width:100%;
+            min-width:1180px;
+            height:330px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .announcement_title_wrap{
+            background:url(../images/announcement.jpg) repeat-x center;
+        }
+
+        .course_titleContent_box{
+            margin-left:62px;
+            margin-right:62px;
+            width:1180px;
+        }
+
+        .course_title{
+            color:#ffffff;
+            text-shadow: 2px 2px 4px #888888;
+            font-size:50px;
+        }
+
+        /* 서브GNB */
+        .course_subGnb_wrap{
+            width:100%;
+            height:50px;
+            border-bottom:1px solid #dfdfdf;
+            box-sizing: content-box;
+            margin-bottom:70px;
+        }
+
+        .course_subGnbContent_wrap{
+            width:1180px;
+            margin:0 auto;
+            background:#fff;
+            height:50px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .course_subGnbList{
+            width:304px;
+            display:flex;
+            align-items: center;
+            position:relative;
+        }
+
+        .course_subGnbListFirstItem{
+            width:40px;
+        }
+
+        .course_subGnbListFirstItemLink{
+            display:block;
+            width:40px;
+            vertical-align: middle;
+        }
+
+        .course_subGnbListItem{
+            width:141px;
+            background:url(../images/nav_arw.png) left no-repeat;
+            height:50px;
+            padding:13px 20px 0 50px;
+            position:relative;
+        }
+
+        .course_subGnbListItemText{
+            font-size:15.4px;
+        }
+
+        .course_subGnbListItemLink{
+            font-size:15.4px;
+            position:relative;
+            color:#5289e6;
+        }
+
+        .course_subGnbListItemLinkText::before{
+            position:absolute;
+            bottom:-4px;
+            left:1px;
+            content:'';
+            height:1px;
+            width:100%;
+            background-color: #5289e6;
+        }
+
+        .course_subGnbListItemLinkTriangle{
+            position:absolute;
+            top:3px;
+            right:-15px;
+        }
+
+        .course_subGnbSns_box{
+            width:268px;
+            height:50px;
+            position:relative;
+            display: flex;
+        }
+
+        .course_subGnbSnsFuncList{
+            display:flex;
+            width:72px;
+            height:50px;
+            align-items: center;
+        }
+
+        .course_subGnbSnsFuncListItem{
+            margin-right:15px;
+        }
+
+        .course_subGnbSnsFuncList::after{
+            content:'';
+            position:absolute;
+            left:72px;
+            top:16px;
+            width:1px;
+            height:17px;
+            background-color:#e5e5e5;
+        }
+
+        .course_subGnbSnsList{
+            display:flex;
+            width:196px;
+            padding-left:15px;
+            padding-top:10px;            
+        }
+
+        .course_subGnbSnsListItem{
+            margin-left:4px;
+        }
+
+        .course_subGnbSnsListItem--noMargin{
+            margin-left:0px;
+        }
+
+        .course_subGnbSnsListItemLinkImg{
+            width:33px;
+            height:32px;
+        }
+
+        /* main 컨텐츠 */
+        .main_content{
+            width:1180px;
+            margin:0 auto;
+        }
+
+        /* LNB 링크 */
+        .course_courseLnb_box{
+            border-top: 1px solid #e6e6e6;
+            border-bottom: 1px solid #e6e6e6;
+            margin-bottom:30px;
+        }
+
+        .course_courseLnbList{
+            display:flex;
+        }
+
+        .course_courseLnbListItem{
+            width:590px;
+            height:60px;
+        }
+
+        .course_courseLnbListItemLink{
+            display: inline-block;
+            width:590px;
+            height:60px;
+            text-align: center;
+            border-left:1px solid #e6e6e6;
+            border-right:1px solid #e6e6e6;
+        }
+
+        .course_courseLnbListItemLinkTitle{
+            display:inline-block;
+            text-align: center;
+            font-size:18px;
+            color:black;
+            line-height:60px;
+            width:590px;
+            font-weight:normal;
+        }
+
+        .course_courseLnbListItemLinkTitle--blue{
+            background-color: #0051A4;
+            border-color:#0051A4;
+            color:#ffffff;
+        }
+
+        /* 코스 목록 컨텐츠 */
+        .course_search_wrap{
+            width:1180px;
+            height:auto;
+            margin-bottom:108px;
+        }
+
+        .course_search_box{
+            background-color:#fafafa;
+            height:75px;
+            border: 1px solid #dfdfdf;
+            padding:20px;
+        }
+
+        .course_regionFilter_box{
+            width:160px;
+            display:flex;
+        }
+
+        .course_regionfilterLabel{
+            display: inline-block;
+            line-height: 30px;
+            font-size:15.4px;
+            width:40px;
+        }
+
+        .course_regionFilterSelect{
+            width:120px;
+            height:30px;
+            padding-left:10px;
+            padding-right:60px;
+            appearance: none;
+            background:url(../images/select_btn.png) no-repeat right;
+            border:1px solid #dfdfdf;
+            color:#a3a3a3;
+        }
+
+        .course_hastagFilter_box{
+            width:432px;
+            margin-left:23px;
+            display:flex;
+        }
+
+        .course_hashtagfilterLabel{
+            display: inline-block;
+            line-height: 30px;
+            width:70px;
+            font-size:15.4px;
+        }
+
+        .course_hashtagFilterSelect{
+            width:200px;
+            height:30px;
+            padding-left:10px;
+            padding-right:60px;
+            appearance: none;
+            border:1px solid #dfdfdf;
+            background:url(../images/select_btn.png) no-repeat right;
+            color:#a3a3a3;
+        }
+
+        .course_form{
+            display:flex;
+            justify-content: space-between;
+            margin-bottom:45px;
+        }
+
+        .course_formRegionHashtag_wrap{
+            display:flex;
+            width:430px;
+        }
+
+        .course_searchFilter_box{
+            width:524px;
+            display:flex;
+        }
+
+        .course_searchFilterLabel{
+            display: inline-block;
+            line-height: 30px;
+            width:55px;
+            font-size:15.4px;
+        }
+
+        .course_searchFilterInput{
+            width:458px;
+            padding-left:10px;
+            color:#a3a3a3;
+            border:1px solid #dfdfdf;
+        }
+
+        .course_formButton{
+            display:block;
+            width:97px;
+            height:37px;
+            margin:0 auto;
+            border:none;
+            background-color:#2d58a0;
+            padding:10px 30px;
+            font-size:15.4px;
+            color:#fff;
+            text-align:center;
+            cursor:pointer;
+        }
+
+        /* 코스 컨텐츠 목록 */
+        .course_content_wrap{
+            border-top:2px solid #2d58a0;
+            padding-top:20px;
+        }
+
+        .course_contentListItem{
+            display:flex;
+            height:220px;
+            padding-top:15px;
+            padding-bottom:15px;
+        }
+
+        .course_contentListItemImg_box{
+            width:354px;
+            height:188px;
+        }
+
+        .course_contentListItemLink{
+            width:354px;
+            height:188px;
+        }
+
+        .course_contentListItemLinkImg{
+            width:354px;
+            height:188px;
+            object-fit: cover;
+        }
+
+        .course_contentListItemText_box{
+            padding-left:52px;
+            height:188px;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .course_contentListItemTextLink{
+            display:block;
+        }
+
+        .course_contentListItemTextLinkTitle{
+            font-size:20px;
+            margin-bottom:10px;
+            text-overflow:ellipsis;
+            white-space:normal;
+            word-wrap:break-word;
+            line-height:1.6;
+            color:#333;
+        }
+
+        .course_contentListItemTextLinkText{
+            display:-webkit-box;
+            -webkit-line-clamp:2;
+            -webkit-box-orient:vertical;
+            overflow:hidden;
+            font-size:15.4px;
+            color:#777;
+            margin-bottom:10px;
+        }
+
+        .course_contentListItemTextList{
+            margin-bottom:20px;
+        }
+
+        .course_contentListItemTextListRegion{
+            font-size:15.4px;
+            color:#777;
+            padding-bottom:10px;
+        }
+
+        .course_contentListItemTextListHashtag{
+            font-size:15.4px;
+            color:#777;
+        }
+
+        /* 페이지 넘기기 버튼 */
+        .course_page_wrap{
+            margin-top:70px;
+            margin-bottom:80px;
+            width:1180px;
+            height:42px;
+        }
+
+        .course_pageContent_box{
+            display: flex;
+            justify-content: center;
+            width:604px;
+            height:40px;
+            margin:0 auto;
+        }
+
+        .course_pageBtn{
+            width:38px;
+            height:38px;
+            text-align: center;
+            line-height:38px;
+            font-size: 13px;
+            background-color: #FFFFFF;
+        }
+
+        .course_pageBtn:hover{
+            background-color: #2d58a0;
+            color:#FFFFFF;
+        }
+
+        .course_pageBtn--prev{
+            margin-right:16px;
+        }
+
+        .course_pageBtn--next{
+            margin-left:16px;
+        }
+
+        .course_pageBtn--on{
+            background-color: #5289E6;
+            color:#FFFFFF;
+        }
+
+
+
+        /* 코스 4 depth 웹 페이지 */
+        
+        .main_content--greyBorder{
+            border-top:1px solid #e6e6e6;
+        }
+
+        .courseContent_title_wrap{
+            width:1180px;
+            height:120px;
+        }
+
+        .courseContent_titleContent{
+            margin-top:30px;
+            padding-bottom:40px;
+            border-bottom:2px solid #2d58a0;
+            height:120px;
+        }
+
+        .courseContent_titleContentTitle{
+            width:944px;
+            margin:0 auto;
+            text-align: center;
+            font-size:26.6px;
+            font-weight: 500;
+            margin-bottom:10px;
+        }
+
+        .courseContent_titleContentText{
+            margin-bottom:7px;
+            text-align: center;
+            font-size:15.4px;
+            color:#8C8C8C;
+        }
+
+        .courseContent_content_wrap{
+            padding-top:30px;
+            width:1180px;
+            border-bottom:1px solid #e6e6e6;
+        }
+
+        .courseContent_contentText{
+            font-weight: 400;
+            color:black;
+            line-height:21px;
+            margin-bottom:44px;
+        }
+
+        .courseContent_contentMap_wrap{
+            height:500px;
+            background:#ccc;
+            margin-bottom:40px;
+        }
+
+        .courseContent_contentSlider_wrap{
+            height:auto;
+            background:#f3f2f2;
+            padding-top:35px;
+            padding-bottom:10px;
+        }
+
+        /* 코스 4depth 페이지 슬라이더 */
+
+        .slider-wrap{
+            width:1140px;
+            height:300px;
+            background-color: #f3f2f2;
+            margin:0 auto;
+        }
+
+        .swiper {
+            position:relative;
+            width: 1140px;
+            height: 300px;
+        }
+
+        .swiper::after{
+            content:'';
+            width:100%;
+            height:4px;
+            position:absolute;
+            background:url(../images/bg_cos_detail.gif) repeat-x;
+            top:28.7px;
+            left:0;
+        }
+
+        .swiper-button-prev{
+            position:absolute;
+            width:30px;
+            height:30px;
+            top:60%;
+            left:0;
+            background-image:url(../images/btn_cos_prev.png);
+            background-repeat: no-repeat;
+            background-size:contain;
+            background-position: center;
+        }
+
+        .swiper-button-next{
+            position:absolute;
+            width:30px;
+            height:30px;
+            top:60%;
+            right:0;
+            background-image:url(../images/btn_cos_next.png);
+            background-repeat: no-repeat;
+            background-size:contain;
+            background-position: center;
+        }
+
+        .swiper-button-prev::after{
+            content:'';
+        }
+
+        .swiper-button-next::after{
+            content:'';
+        }
+
+        .swiper-wrapper{
+            width:1240px;
+            margin:0 auto;
+        }
+
+        .swiper-slide{
+            width:253px !important;
+            position:relative;
+            padding-top:65px;
+            padding-bottom:39px;
+        }
+
+        .swiper-slide::after{
+            position:absolute;
+            top:27px;
+            left:0;
+            content:'';
+            width:99.3%;
+            height:2px;
+            z-index:10;
+        }
+
+        .swiper-slide--on::before{
+            position:absolute;
+            top:27px;
+            left:0;
+            content:'';
+            width:50%;
+            height:2px;
+            border-bottom:4px solid rgba(45, 88, 160, 1);
+            z-index:10;
+        }
+
+        .swiper-slide--off::before{
+            position:absolute;
+            top:27px;
+            left:0;
+            content:'';
+            width:100%;
+            height:2px;
+            border-bottom:4px solid rgba(45,88,160,1);
+            z-index:11;
+        }
+
+        .swiper-slide:hover .slide-link::after{
+            background-color: rgba(45,88,160,1);
+        }
+
+        .slide-course{
+            display:inline-block;
+            position:absolute;
+            top:14px;
+            left:47%;
+            /* border-radius: 100%; */
+            width:30px;
+            height:30px;
+            text-align: center;
+            line-height:25px;
+            font-style:normal;
+            transform:translateX(-50%);
+            background-color: white;
+            border:4px solid black;
+            z-index:20;
+        }
+
+        .slide-course--on{
+            border:4px solid rgba(45, 88, 160, 1);
+        }
+
+        .slide-course--off{
+            border:4px solid black;
+        }
+
+        .slide-link{
+            display: block;
+            position:relative;
+            width:233px;
+            height:233px;
+            /* margin:0 auto; */
+        }
+        
+        .slide-link--on::before{
+            content:"";
+            display:block;
+            position: absolute;
+            left:0;
+            top:0;
+            width:233px;
+            height:233px;
+            background-color:rgba(45,88,160,1);
+            z-index:10;
+        }
+
+        .slide-link::after{
+            content:"";
+            position:absolute;
+            top:0;
+            left:0;
+            width:233px;
+            height:233px;
+            background-color: rgba(0,0,0,0.6);
+        }
+
+        .slide-linkImg01{
+            position:absolute;
+            top:0;
+            left:0;
+            width:233px;
+            height:233px;
+            background:url(../images/Taegot_01.jpg) no-repeat 50% 50%;
+        }
+
+        .slide-linkImg02{
+            position:absolute;
+            top:0;
+            left:0;
+            width:233px;
+            height:233px;
+            background:url(../images/Taegot_02.jpg) no-repeat 50% 50%;
+        }
+        .slide-linkImg03{
+            position:absolute;
+            top:0;
+            left:0;
+            width:233px;
+            height:233px;
+            background:url(../images/Taegot_03.jpg) no-repeat 50% 50%;
+        }
+        .slide-linkImg04{
+            position:absolute;
+            top:0;
+            left:0;
+            width:233px;
+            height:233px;
+            background:url(../images/Taegot_04.jpg) no-repeat 50% 50%;
+        }
+        .slide-linkImg05{
+            position:absolute;
+            top:0;
+            left:0;
+            width:233px;
+            height:233px;
+            background:url(../images/Taegot_05.jpg) no-repeat 50% 50%;
+        }
+        .slide-linkImg06{
+            position:absolute;
+            top:0;
+            left:0;
+            width:233px;
+            height:233px;
+            background:url(../images/Taegot_06.jpg) no-repeat 50% 50%;
+        }
+
+        .slide-linkImg07{
+            position:absolute;
+            top:0;
+            left:0;
+            width:233px;
+            height:233px;
+            background:url(../images/Taegot_07.jpg) no-repeat 50% 50%;
+        }
+
+        .slide-linkImg08{
+            position:absolute;
+            top:0;
+            left:0;
+            width:233px;
+            height:233px;
+            background:url(../images/Taegot_08.jpg) no-repeat 50% 50%;
+        }
+
+        .slide-linkText_box{
+            position:absolute;
+            left:0;
+            top:0;
+            color:white;
+            font-weight: 700;
+            width:100%;
+            height:100%;
+            padding:10px;
+            z-index:10;
+        }
+
+        .slide-linkText{
+            display: block;
+            font-size:40px;
+            color:#FFFFFF;
+        }
+
+        .slide-linkBreak{
+            border:1px solid #FFFFFF;
+            width:72%;
+            margin-top:12.6px;
+            margin-bottom:12.6px;
+        }
+
+        .slide-linkRegion{
+            display:block;
+            font-size:28px;
+            color:#FFFFFF;
+            font-weight: 200;
+        }
+
+        .slide-linkCourse{
+            display:block;
+            font-size:28px;
+            color:#FFFFFF;
+            font-weight:600;
+        }
+
+
+        /* .slide-linkText{
+            position:absolute;
+            word-break:keep-all;
+            left:15px;
+            right:15px;
+            top:50%;
+            transform:translateY(-50%);
+            text-align: center;
+            z-index:20;
+            display:-webkit-box;
+            -webkit-line-clamp:2;
+            -webkit-box-orient: vertical;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            max-height:36px;
+            line-height:17px;
+            letter-spacing: -0.5px;
+        } */
+
+        /* 슬라이더를 눌렀을 때 나오는 컨텐츠 */
+
+        .courseContent_sliderCourse_wrap{
+            width:100%;
+            height:auto;
+            margin-top:33.6px;
+            margin-bottom:21px;
+        }
+
+        .courseContent_sliderCourseContent_wrap{
+            width:1140px;
+            margin:0 auto;
+        }
+
+        .courseContent_sliderCourseContentInfo_wrap{
+            height:auto;
+            display:flex;
+            margin-bottom:21px;
+        }
+
+        .courseContent_sliderCourseContentInfoTitle_wrap{
+            width:233px;
+            height:100%;
+            background-color:rgba(45,88,160,1);
+            margin-right:21px;
+            padding:16.8px 12.6px;
+        }
+
+        .courseContent_sliderCourseContentInfoTitleContent_box{
+            width:130px;
+        }
+
+        .courseContent_sliderCourseContentInfoSpot{
+            font-size:42px;
+            font-weight:700;
+            color:#FFFFFF;
+        }
+
+        .courseContent_sliderCourseContentInfoBreak{
+            border:2px solid #FFFFFF;
+            width:130px;
+            margin-top:12.6px;
+            margin-bottom:21px;
+        }
+
+        .courseContent_sliderCourseContentInfoTitle{
+            display:block;
+            width:100%;
+            font-size:29.4px;
+            font-weight: 600;
+            color:#FFFFFF;
+        }
+
+        .courseContent_sliderCourseContentInfoTitleText{
+            display:block;
+            font-size:29.4px;
+            font-weight:200;
+        }
+
+        .courseContent_sliderCourseContentInfoText_wrap{
+            width:915px;
+            height:220px;
+        }
+
+        .courseContent_sliderCourseContentInfoText_box{
+            padding-left:10.5px;
+            padding-right:10.5px;
+            height:100%;
+        }
+
+        .courseContent_sliderCourseContentInfoTextTitle{
+            font-size:25.2px;
+            margin-bottom:12.6px;
+            color:rgba(45,88,160,1);
+            font-weight:500;
+        }
+
+        .courseContent_sliderCourseContentInfoTextText{
+            font-size:18.9px;
+            line-height:34.02px;
+        }
+
+        .courseContent_sliderCourseContentImg_wrap{
+            display:flex;
+            width:100%;
+            justify-content: space-between;
+        }
+
+        .courseContent_sliderCourseContentImg_box{
+            width:366px;
+            height:366px;
+        }
+
+        .courseContent_sliderCourseContentImg{
+            width:100%;
+            height:100%;
+            object-fit: contain;
+        }
+
+        .courseContent_sliderCourseContentImg_box{
+            width:366px;
+            height:366px;
+        }
+
+        .courseContent_sliderCourseContentImg01{
+            background:url(../images/Taegot_detail01_01.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentImg02{
+            background:url(../images/Taegot_detail01_02.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentImg03{
+            background:url(../images/Taegot_detail01_03.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentImg04{
+            background:url(../images/Taegot_detail02_01.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentImg05{
+            background:url(../images/Taegot_detail02_02.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentImg06{
+            background:url(../images/Taegot_detail02_03.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentImg07{
+            background:url(../images/Taegot_detail03_01.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentImg08{
+            background:url(../images/Taegot_detail03_02.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentImg09{
+            background:url(../images/Taegot_detail03_03.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentImg10{
+            background:url(../images/Taegot_detail04_01.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentImg11{
+            background:url(../images/Taegot_detail04_02.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentImg12{
+            background:url(../images/Taegot_detail04_03.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentImg13{
+            background:url(../images/Taegot_detail05_01.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentImg14{
+            background:url(../images/Taegot_detail05_02.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentImg15{
+            background:url(../images/Taegot_detail05_03.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentImg16{
+            background:url(../images/Taegot_detail06_01.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentImg17{
+            background:url(../images/Taegot_detail06_02.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentImg18{
+            background:url(../images/Taegot_detail06_03.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentImg19{
+            background:url(../images/Taegot_detail07_01.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentImg20{
+            background:url(../images/Taegot_detail07_02.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentImg21{
+            background:url(../images/Taegot_detail07_03.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentImg22{
+            background:url(../images/Taegot_detail08_01.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentImg23{
+            background:url(../images/Taegot_detail08_02.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentImg24{
+            background:url(../images/Taegot_detail08_03.jpg) 50% 50% no-repeat;
+        }
+
+        .courseContent_sliderCourseContentMoreInfo_box{
+            margin-top:14px;
+            margin-bottom:14px;
+        }
+
+        .courseContent_sliderCourseContentMoreInfoIcon{
+            display:inline-block;
+            font-size:16.8px;
+            margin-right:5px;
+        }
+
+        .courseContent_sliderCourseContentMoreInfoText{
+            display:inline-block;
+            font-size:16.8px;
+            margin-right:5px;
+            color:#212529;
+        }
+
+        /* 해시태그 버튼 */
+        .courseContent_sliderCourseContentHashtag_box{
+            width:1140px;
+            margin:0 auto;
+        }
+
+        .courseContent_sliderCourseContentHashtagList{
+            display:flex;
+            flex-wrap:wrap;
+            margin-left:-15px;
+        }
+
+        .courseContent_sliderCourseContentHashtagListItem{
+            height:30px;
+            text-align: center;
+            margin-left: 5px;
+        }
+
+        .courseContent_sliderCourseContentHashtagListItemLink{
+            display:inline-block;
+            height:100%;
+            text-align: center;
+            line-height: 30px;
+            color:#777777;
+            padding:0 10px;
+        }
+
+        /* 지도 크기 */
+
+        .map{
+            width:1140px;
+            height:700px;
+        }
+
+        /* 해당 코스가 마음에 드시나요? */
+        .courseContent_like_wrap{
+            width:1180px;
+            position:relative;
+            padding:62px 0;
+            display:flex;
+            justify-content: space-between;
+            margin-bottom:30px;
+            border-bottom:1px solid #d1d1d1;
+        }
+
+        .courseContent_likeTitle_box{
+            position: relative;
+            padding-left:25px;
+        }
+
+        .courseContent_likeTitle{
+            font-size:25.2px;
+        }
+
+        .courseContent_likeTitle::after{
+            content:"";
+            background: url(../images/icon_user_expression02.png) no-repeat;
+            position: absolute;
+            top:0;
+            left:0;
+            width:20px;
+            height:20px;
+        }
+
+        .courseContent_likeText{
+            font-size:18.9px;
+            padding-top:7px;
+        }
+
+        .courseContent_likeIconLike{
+            position:relative;
+            display: inline-block;
+            width:152px;
+            height:71px;
+            margin-left:80px;
+            background-color: #f1f1f1;
+            font-size:18px;
+            text-align: center;
+            line-height:71px;
+            padding-left:60px;
+        }
+
+        .courseContent_likeIconLike::before{
+            content:"";
+            position: absolute;
+            background: url(../images/icon_user_expression.png) no-repeat 50% 0%;
+            top:50%;
+            transform: translateY(-50%);
+            left:21px;
+            display: block;
+            width:50px;
+            height:45px;
+        }
+
+        .courseContent_likeIconLike--on{
+            position:relative;
+            display: inline-block;
+            width:152px;
+            height:71px;
+            margin-left:80px;
+            background-color: #f1f1f1;
+            font-size:18px;
+            text-align: center;
+            line-height:71px;
+            padding-left:60px;
+        }
+
+        .courseContent_likeIconLike--on::before{
+            content:"";
+            position: absolute;
+            background: url(../images/icon_user_expression.png) no-repeat 50% 33%;
+            top:50%;
+            transform: translateY(-50%);
+            left:21px;
+            display: block;
+            width:50px;
+            height:45px;
+        }
+
+        .courseContent_likeIconDislike{
+            position:relative;
+            display: inline-block;
+            width:152px;
+            height:71px;
+            background-color: #f1f1f1;
+            margin-left:20px;
+            font-size:18px;
+            text-align: center;
+            line-height:71px;
+            padding-left:60px;
+        }
+
+        .courseContent_likeIconDislike::before{
+            content:"";
+            position: absolute;
+            background: url(../images/icon_user_expression.png) no-repeat 50% 67%;
+            top:50%;
+            transform: translateY(-50%);
+            left:21px;
+            display: block;
+            width:50px;
+            height:45px;
+        }
+
+        .courseContent_likeIconDislike--on{
+            position:relative;
+            display: inline-block;
+            width:152px;
+            height:71px;
+            background-color: #f1f1f1;
+            margin-left:20px;
+            font-size:18px;
+            text-align: center;
+            line-height:71px;
+            padding-left:60px;
+        }
+
+        .courseContent_likeIconDislike--on::before{
+            content:"";
+            position: absolute;
+            background: url(../images/icon_user_expression.png) no-repeat 50% 100%;
+            top:50%;
+            transform: translateY(-50%);
+            left:21px;
+            display: block;
+            width:50px;
+            height:45px;
+        }
+
+        /* 목록으로 돌아가기 */
+        .courseContent_return_wrap{
+            margin-top:35px;
+            position: relative;
+            margin-bottom:35px;
+        }
+
+        .courseContent_returnLink{
+            display: block;
+            position:relative;
+            top:0;
+            left:1083px;
+            width:97px;
+            height:43px;
+            background-color: rgba(45, 88, 160, 1);
+            color:white;
+            text-align: center;
+            line-height:43px;
+            font-size:15.4px;
+        }
+
+        /* 프로계획러 사용자가 직접 만든 풀코스 여행 */
+        .courseUser_banner_wrap{
+            margin-bottom:30px;
+        }
+
+        .courseUser_bannerContent_box{
+            margin:0 auto;
+            width:1180px;
+            height:269px;
+        }
+
+        .courseUser_bannerImg{
+            text-align: center;
+            width:1180px;
+            height:269px;
+            margin:0 auto;
+        }
+
+        /* 프로계획러 사용자 풀코스 여행 필터 */
+        .courseUser_filter_wrap{
+            margin-bottom:30px;
+        }
+
+        .courseUser_filterContent_box{
+            width:1180px;
+            margin:0 auto;
+        }
+
+        .courseUser_filterList{
+            display: flex;
+            flex-wrap:wrap;
+            justify-content:left;
+            margin-top:-10px;
+            margin-left:-20px;
+            margin-bottom:30px;
+        }
+
+        .courseUser_filterListItem{
+            position: relative;
+            width:280px;
+            height:72px;
+            border:1px solid #3F71D2;
+            margin-top:10px;
+            margin-left:20px;
+        }
+
+        .courseUser_filterListItemLink{
+            display: inline-block;
+            width:100%;
+            height:100%;
+            background-color: #FFFFFF;
+            color:#333333;
+        }
+
+        .courseUser_filterListItemLink:hover{
+            display: inline-block;
+            width:100%;
+            height:100%;
+            background-color: #3F71D2;
+            color:#FFFFFF;
+        }
+
+        .courseUser_filterListItemLink--on{
+            display: inline-block;
+            width:100%;
+            height:100%;
+            background-color: #3F71D2;
+            color:#FFFFFF;
+        }
+
+        .courseUser_filterListItemLinkText{
+            padding-left:75px;
+            line-height: 72px;
+            font-size:21px;
+        }
+
+        .courseUser_filterBarList{
+            background-color: #3F71D2;
+            width:1180px;
+            height:70px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .courseUser_filterBarListItem{
+            margin-left:20px;
+            width:115px;
+            text-align: center;
+        }
+
+        .courseUser_filterBarListItemLink{
+            color:#FFFFFF;
+        }
+
+        .courseUser_filterBarListItemLink--on{
+            color:#fef344;
+        }
+
+        .courseUser_filterBarListItemLinkText{
+            font-size:21px;
+            line-height: 70px;
+        }
+
+        /* 클릭 시 나오는 컨텐츠 */
+        .courseUser_content_wrap{
+            margin-bottom:30px;
+        }
+
+        .courseUser_content_box{
+            width:1204px;
+            height:auto;
+            margin:0 auto;
+        }
+
+        .courseUser_contentList{
+            max-width:1204px;
+            display: flex;
+        }
+
+        .courseUser_contentListItem{
+            position:relative;
+            width:277px;
+            height:auto;
+            margin-bottom:20px;
+            min-height:250px;
+        }
+
+        .courseUser_contentListItem::after{
+            content: "";
+            position: absolute;
+            background-color:rgba(0,0,0,0.6);
+            width:100%;
+            height:100%;
+            top:0;
+            left:0;
+        }
+
+        .courseUser_contentListItemBackgroundImg{
+            position:absolute;
+            object-fit: cover;
+            width:100%;
+            height:100%;
+        }
+
+        .courseUser_contentListItemCover_box{
+            position:absolute;
+            padding:40px 30px;
+            z-index:10;
+        }
+
+        .courseUser_contentListItemCoverTitle{
+            font-size:21px;
+            color:#FFFFFF;
+        }
+
+        .courseUser_contentListItemCoverRegion{
+            color:#FFFFFF;
+            margin-top:10px;
+        }
+
+        .courseUser_contentListItemCoverDistance{
+            color:#FFFFFF;
+            margin-bottom:10px;
+        }
+
+        .courseUser_contentListItemCoverUserImg{
+            width:26px;
+            height:26px;
+        }
+
+        .courseUser_contentListItemCovecourseUser_contentListrUserImg{
+            width:26px;
+            height:26px;
+            border-radius: 100%;
+        }
+
+        .courseUser_contentListItemCoverUserName{
+            display: inline-block;
+            color:#FFFFFF;
+            padding-left:10px;
+        }
+
+        .courseUser_contentListItemCoverGocourse_box{
+            margin-top:20px;
+            width:80%;
+        }
+
+        .courseUser_contentListItemCoverGocourseLink{
+            display: inline-block;
+            text-align: center;
+            width:101px;
+            height:40px;
+            line-height:40px;
+            color:#FFFFFF;
+            border:3px solid #FFFFFF;
+        }
+
+        .courseUser_contentListItemInfo_box{
+            position:relative;
+            padding-left:30px;
+            z-index:1000;
+        }
+
+        .courseUser_contentListItemInfoList{
+            background:url(../images/Vector\ 1.png) repeat-y left;
+        }
+
+        .courseUser_contentListItemInfoListItem{
+            width:100%;
+            height:70px;
+            background: url(../images/Ellipse\ 2.png) no-repeat left;
+            margin-left:-7px;
+        }
+
+        .courseUser_contentListItemInfoListItemLink{
+            width:250px;
+            display: inline-block;
+            color:#FFFFFF;
+            font-size:16.4px;
+            line-height:70px;
+            padding-left:30px;
+            text-overflow:ellipsis;
+            white-space:nowrap;
+            word-break: break-all;
+            overflow:hidden;
+        }
+
+        .userCourse_pageButton_wrap{
+            margin-top:70px;
+            margin-bottom:80px;
+        }
+
+        .userCourse_pageButton_box{
+            display: flex;
+            justify-content: center;
+            width:604px;
+            height:40px;
+            margin: 0 auto;
+        }
+
+        .userCourse_pageButtonLink{
+            width:38px;
+            height:38px;
+            text-align: center;
+            line-height: 38px;
+        }
+
+        /* 페이지 버튼 */ 
+        .userCourse_pageButton_box{
+            display: flex;
+        }
+
+        .userCourse_pageButton--prev{
+            margin-right:16px;
+        }
+
+        .userCourse_pageButton{
+            width:38px;
+            height:38px;
+            font-size: 13px;
+            background-color: #FFFFFF;
+        }
+
+        .userCourse_pageButton--on{
+            background-color: #5289E6;
+            color:#FFFFFF;
+        }
+
+        .userCourse_pageButton:hover{
+            background-color: #2d58a0;
+            color:#FFFFFF;
+        }
+
+        .userCourse_pageButton--next{
+            margin-left:16px;
+        }
+
+        /* 로딩창 */
+        .loading{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            position:fixed;
+            top:0;
+            width:100vw;
+            height:100vh;
+            background-color: rgba(0,0,0,0.7);
+            z-index:9999;
+        }
+
+        .loading_element{
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            text-align: center;
+            position:absolute;
+            width:65px;
+            height:65px;
+            background-color: none;
+            border-radius: 100%;
+        }
+
+        .loading--first{
+            animation: spin 2.5s infinite linear;
+            animation-delay: 0.20s;
+        }
+
+        .loading--second{
+            animation: spin 2.5s infinite linear;
+            animation-delay: 0.4s;
+        }
+
+        .loading--third{
+            animation: spin 2.5s infinite linear;
+            animation-delay: 0.6s;
+        }
+
+        .loading--fourth{
+            animation: spin 2.5s infinite linear;
+            animation-delay: 0.8s;
+        }
+
+        @keyframes spin{
+            0%{
+                transform: rotate(0deg);
+            } 
+            40%{
+                transform: rotate(360deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        .circle{
+            display: inline-block;
+            width:16px;
+            height:16px;
+            border-radius: 100%;
+        }
+
+        .circle--red{
+            background-color: rgb(137, 168, 79);
+        }
+
+        .circle--blue{
+            background-color: rgb(123, 175, 212);
+        }
+
+        .circle--green{
+            background-color: rgb(220, 68, 5);
+        }
+
+        .circle--yellow{
+            background-color: rgb(166, 3, 17);
+        }
+
+        /* 공지사항 */
+        .notice_content_wrap{
+            margin-top:70px;
+            border-top:1px solid #e6e6e6;
+        }
+
+        .notice_search_wrap{
+            margin-top:35px;
+            padding-bottom:15px;
+            display:flex;
+            justify-content: space-between;
+            border-bottom: 2px solid #2d58a0;
+        }
+
+        .notice_totalPage_box{
+            display: flex;
+            font-size:14.7px;
+            align-items:end;
+        }
+
+        .notice_search_box{
+            font-size:15.4px;
+        }
+
+        .search_label{
+            margin-right:5px;
+        }
+
+        .currentPage{
+            color:#2d58a0;
+            margin-left:5px;
+            margin-right:5px;
+        }
+
+        .totalPage{
+            color:#2d58a0;
+            margin-left:5px;
+        }
+
+        .search_input{
+            width:194px;
+            height:30px;
+            padding-left:10px;
+            margin-right:7px;
+        }
+
+        .search_button{
+            width: 98px;
+            height:32px;
+            background: #4a8bf8 url(../images/search_btn.png) no-repeat 20% 50%;
+            color:#FFFFFF;
+            padding-left:20px;
+        }
+
+        .table_list{
+            width:100%;
+            text-align: center;
+        }
+
+        .table_item{
+            vertical-align: middle;
+            height:50px;
+        }
+
+        .title{
+            text-align: left;
+        }
+
+
+        /* 숨기기 클래스 */
+        .hidden{
+            display:none;
+        }
+
+        .invisible{
+            visibility: hidden;
+        }
+
+        .hide{
+            position:absolute;
+            text-indent: -9999px;
+        }
+
+        
+
+        
+
+        
+
+        
+
+
+       
+
+
+
+
+
+
+        
+
+        

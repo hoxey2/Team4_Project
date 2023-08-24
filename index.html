@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="https://korean.visitkorea.or.kr/resources/images/favicon.ico">
+    <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <title>대한민국 구석구석</title>
+</head>
+
+<body>
+    <div class="skip_menu">
+        <a href="#main">본문으로 가기</a>
+    </div>
+
+    <!-- <div class="loading">
+        <div class="loading_element loading--first">
+            <div class="circle circle--red"></div>
+        </div>
+        <div class="loading_element loading--second">
+            <div class="circle circle--blue"></div>
+        </div>
+        <div class="loading_element loading--third">
+            <div class="circle circle--green"></div>
+        </div>
+        <div class="loading_element loading--fourth">
+            <div class="circle circle--yellow"></div>
+        </div>        
+    </div> -->
+    <header class="header"></header>
+
+    <main class="main">
+        <section class="index_slider_wrap">
+            <ul class="index_sliderList">
+                <li class="index_sliderListItem sliderImg01">
+                    <div class="index_sliderListItemText_box">
+                        <span class="index_sliderListItemTextCategory">추천 테마여행</span>
+                        <h2 class="index_sliderListItemTextTitle">태백 몽토랑산양목장</h2>
+                        <a class="index_sliderListItemTextLink" href="#none"></a>
+                    </div>
+                </li>
+                <li class="index_sliderListItem sliderImg02">
+                    <div class="index_sliderListItemText_box">
+                        <span class="index_sliderListItemTextCategory">추천 테마여행</span>
+                        <h2 class="index_sliderListItemTextTitle">화명생태공원</h2>
+                        <a class="index_sliderListItemTextLink" href="#none"></a>
+                    </div>
+                </li>
+                <li class="index_sliderListItem sliderImg03">
+                    <div class="index_sliderListItemText_box">
+                        <span class="index_sliderListItemTextCategory">추천 여행코스</span>
+                        <h2 class="index_sliderListItemTextTitle">거제도 일상 회복 청춘 투어</h2>
+                        <a class="index_sliderListItemTextLink" href="#none"></a>
+                    </div>
+                </li>
+                <li class="index_sliderListItem sliderImg04">
+                    <div class="index_sliderListItemText_box">
+                        <span class="index_sliderListItemTextCategory">추천 여행지</span>
+                        <h2 class="index_sliderListItemTextTitle">오륙도 스카이워크</h2>
+                        <a class="index_sliderListItemTextLink" href="#none"></a>
+                    </div>
+                </li>
+            </ul>
+            <div class="index_sliderControl_wrap">
+                <div class="index_sliderControlNavBtn_box">
+                    <a class="index_sliderPrevBtn" href="#none"></a>
+                    <a class="index_sliderNextBtn" href="#none"></a>
+                </div>
+                <div class="index_sliderControlPagination_box">
+                    <span class="index_currentPageText">1</span>
+                    /
+                    <span class="index_totalPageText">4</span>
+                </div>
+                <div class="index_sliderControlPlayBtn_box">
+                    <a class="index_sliderPlayBtn hidden" href="#none"></a>
+                    <a class="index_sliderStopBtn" href="#none"></a>
+                </div>
+                <div class="index_sliderProgressbar_box">
+                    <ul class="index_sliderProgressbarList">
+                        <li class="index_sliderProgressbarListItem">
+                            <a class="index_sliderProgressbarListItemLink" href="#none">
+                                추천! 가볼만한 곳
+                                <span class="index_sliderProgressbar index_sliderProgressbar--on"></span>
+                            </a>
+                        </li>
+                        <li class="index_sliderProgressbarListItem">
+                            <a class="index_sliderProgressbarListItemLink" href="#none">
+                                신규 생태테마 관광지
+                                <span class="index_sliderProgressbar"></span>
+                            </a>
+                        </li>
+                        <li class="index_sliderProgressbarListItem">
+                            <a class="index_sliderProgressbarListItemLink" href="#none">
+                                힐링코스
+                                <span class="index_sliderProgressbar"></span>
+                            </a>
+                        </li>
+                        <li class="index_sliderProgressbarListItem">
+                            <a class="index_sliderProgressbarListItemLink" href="#none">
+                                부산가볼만한 곳
+                                <span class="index_sliderProgressbar"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="regionMap_content">
+            <h2>대한민국 구석구석<span>지역 </span><span>정보</span></h2>
+            <h3>지도로 알아보기</h3>
+            <div class="regionMap_slide_container">
+                <h4><strong>서울</strong> 여행지</h4>
+                <div class="regionMap_slide_wrap">
+                    <div class="regionMap_slide_box">
+                        <ul>
+                            <li>
+                                <a href="/region/detail/regionDetail.html" value="">
+                                    <div class="regionMap_slideImg_box">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="regionMap_slideText_box">
+                                        <strong>명칭</strong>
+                                        <span>주소</span>
+                                        <span>전화번호</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="regionMap_slideImg_box">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="regionMap_slideText_box">
+                                        <strong>명칭</strong>
+                                        <span>주소</span>
+                                        <span>전화번호</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="regionMap_slideImg_box">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="regionMap_slideText_box">
+                                        <strong>명칭</strong>
+                                        <span>주소</span>
+                                        <span>전화번호</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="regionMap_slideImg_box">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="regionMap_slideText_box">
+                                        <strong>명칭</strong>
+                                        <span>주소</span>
+                                        <span>전화번호</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="regionMap_slide_box">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="regionMap_slideImg_box">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="regionMap_slideText_box">
+                                        <strong>명칭</strong>
+                                        <span>주소</span>
+                                        <span>전화번호</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="regionMap_slideImg_box">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="regionMap_slideText_box">
+                                        <strong>명칭</strong>
+                                        <span>주소</span>
+                                        <span>전화번호</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="regionMap_slideImg_box">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="regionMap_slideText_box">
+                                        <strong>명칭</strong>
+                                        <span>주소</span>
+                                        <span>전화번호</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="regionMap_slideImg_box">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="regionMap_slideText_box">
+                                        <strong>명칭</strong>
+                                        <span>주소</span>
+                                        <span>전화번호</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="regionMap_slide_box">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="regionMap_slideImg_box">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="regionMap_slideText_box">
+                                        <strong>명칭</strong>
+                                        <span>주소</span>
+                                        <span>전화번호</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="regionMap_slideImg_box">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="regionMap_slideText_box">
+                                        <strong>명칭</strong>
+                                        <span>주소</span>
+                                        <span>전화번호</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="regionMap_slideImg_box">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="regionMap_slideText_box">
+                                        <strong>명칭</strong>
+                                        <span>주소</span>
+                                        <span>전화번호</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="regionMap_slideImg_box">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="regionMap_slideText_box">
+                                        <strong>명칭</strong>
+                                        <span>주소</span>
+                                        <span>전화번호</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="regionMap_slide_box">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="regionMap_slideImg_box">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="regionMap_slideText_box">
+                                        <strong>명칭</strong>
+                                        <span>주소</span>
+                                        <span>전화번호</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="regionMap_slideImg_box">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="regionMap_slideText_box">
+                                        <strong>명칭</strong>
+                                        <span>주소</span>
+                                        <span>전화번호</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="regionMap_slideImg_box">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="regionMap_slideText_box">
+                                        <strong>명칭</strong>
+                                        <span>주소</span>
+                                        <span>전화번호</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="regionMap_slideImg_box">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="regionMap_slideText_box">
+                                        <strong>명칭</strong>
+                                        <span>주소</span>
+                                        <span>전화번호</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="regionMap_slideDot_box">
+                        <button>0</button>
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                    </div>
+                </div>
+                <button class="regionMap_slide_prevBtn">이전</button>
+                <button class="regionMap_slide_nextBtn">다음</button>
+            </div>
+            
+            <div class="regionMap_map_wrap">
+                <div class="regionMap_map_box">
+                    <a href="#none" class="seoul seoul_on"></a>
+                    <a href="#none" class="incheon"></a>
+                    <a href="#none" class="gyeonggi"></a>
+                    <a href="#none" class="gangwondo"></a>
+                    <a href="#none" class="chungnam"></a>
+                    <a href="#none" class="sejong"></a>
+                    <a href="#none" class="daejeon"></a>
+                    <a href="#none" class="jeonbuk"></a>
+                    <a href="#none" class="gwangju"></a>
+                    <a href="#none" class="jeonnam"></a>
+                    <a href="#none" class="chungbuk"></a>
+                    <a href="#none" class="gyeongbuk"></a>
+                    <a href="#none" class="daegu"></a>
+                    <a href="#none" class="ulsan"></a>
+                    <a href="#none" class="busan"></a>
+                    <a href="#none" class="gyeongnam"></a>
+                    <a href="#none" class="jeju"></a>
+                </div>
+            </div>
+        </div>
+
+        <section class="main_issue_title">
+            <h2>
+                오늘의 여행
+                <b><em>I</em><em>S</em><em>S</em><em>U</em><em>E</em></b>
+            </h2>
+        </section>
+        <section class="main_issue_section">
+            <div class="main_issue_wrap">
+                <div class="main_issue_box main_issue_box1">
+                    <a href="/event/event.html">
+                        <div>
+                            <strong><span class="icon1"></span>이벤트1</strong>
+                            <em>자세히보기</em>
+                        </div>
+                    </a>
+                </div>
+                <div class="main_issue_box main_issue_box2">
+                    <a href="/event/event.html">
+                        <div>
+                            <strong><span class="icon2"></span>이벤트2</strong>
+                            <em>자세히보기</em>
+                        </div>
+                    </a>
+                </div>
+                <div class="main_issue_box main_issue_box3">
+                    <a href="/event/event.html">
+                        <div>
+                            <strong><span class="icon3"></span>이벤트3</strong>
+                            <em>자세히보기</em>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="index_theme">
+            <h2>함께 떠나는 힐링<span>테마</span><span>여행</span></h2>
+            <div class="index_theme_container">
+                <div class="index_theme_wrap">
+                    <div class="theme_wrap_blur">backdrop-filter: blur(10px)</div>
+                    <div class="index_theme_bigBox">
+                        <h3><span>평화로운 시간만이 마음을 채우는</span>
+                            <strong>충북<em>충주시</em></strong>
+                        </h3>
+                        <a href="javascript:void(0)">
+                            <!-- <img src="/images/1ad683b9-b996-4e7c-95d7-f0bffa629443.png" alt=""> -->
+                            <div></div>
+                            <p>평화로운 시간을 즐기다 오는
+                                충북 충주로 떠나는 여행</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="index_theme_wrap">
+                    <a href="javascript:void(0)" class="index_theme_box">
+                        <div class="theme_box_blur">backdrop-filter: blur(10px)</div>
+                        <div class="index_themeBox_cont">
+                            <strong>서울 주변 틈새 여행지</strong>
+                            <div class="index_themeBox_more">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="index_theme_box">
+                        <div class="theme_box_blur">backdrop-filter: blur(10px)</div>
+                        <div class="index_themeBox_cont">
+                            <strong>강원 춘천 효도 여행 코스</strong>
+                            <div class="index_themeBox_more">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="index_theme_box">
+                        <div class="theme_box_blur">backdrop-filter: blur(10px)</div>
+                        <div class="index_themeBox_cont">
+                            <strong>인천 강화도 스토리워크 여행</strong>
+                            <div class="index_themeBox_more">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="index_theme_box">
+                        <div class="theme_box_blur">backdrop-filter: blur(10px)</div>
+                        <div class="index_themeBox_cont">
+                            <strong>한옥에서 즐기는 힐링 여행</strong>
+                            <div class="index_themeBox_more">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="main_notice_wrap">
+            <div class="main_notice_box">
+                <div class="main_notice_title">
+                    <h2>공지사항</h2>
+                    <span class="screen_out">더보기</span>
+                </div>
+                <div class="main_notice_info">
+                    <div class="main_noticeDate"><p class="main_noticeDate_top">15</p><p class="main_noticeDate_bottom">2023.05.</p></div>
+                    <div class="main_notice_info2">
+                        <p><a href="/notice/main_notice.html">2023 상설문화관광프로그램 전동문화공연 안내</a></p>
+                        <p><a href="/notice/main_notice.html">□ 기간 - 관노가면극: 4~6월[토 15:00] / 9~10월[토 15:00/일11:00]</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_notice_box">
+                <p><span><a href="/notice/main_notice.html">·2023 상설문화관광프로그램 전통문화공연 안내 2023.05.15</a></span></p>
+                <p><span><a href="/notice/main_notice.html">·강릉관광브랜드공연 프레페스티벌 개최 안내 2023.05.11</a></span></p>
+                <p><span><a href="/notice/main_notice.html">·2023 강릉 버스킹 홀릭 행사 안내 2023.05.12</a></span></p>
+                <p><span><a href="/notice/main_notice.html">·강릉시 인바운드여행사·관광기업 육성사업 공모전 개최 안내 2023.03.12</a></span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"></footer>
+    
+    <script>
+        // Header
+        $(".header").load("/header/header.html");
+
+        // Footer
+        $(".footer").load("/footer/footer.html");
+    </script>
+    <script src="/js/index.js"></script>
+    <!-- <script>
+        const loadingPage = document.querySelector('.loading');
+        window.onload = function(){
+            loadingPage.classList.add('hidden');
+        }
+    </script> -->
+</body>
+
+</html>

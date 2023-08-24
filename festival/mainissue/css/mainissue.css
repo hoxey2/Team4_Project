@@ -1,0 +1,153 @@
+.main_issue_title {
+    display: block;
+    margin: 0 0 50px;
+    padding-top: 150px;
+    font-size: 32px;
+    color: #282828;
+    font-family: 'cafe24';
+    text-align: center;
+}
+.main_issue_title b {
+    color: #25a261;
+}
+.main_issue_title b em{
+    position: relative;
+}
+.main_issue_title b em:before {
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 85%;
+    width: 5px;
+    height: 5px;
+    background: #25a261;
+    border-radius: 50%;
+    transform: translateX(-50%);
+  
+}
+
+.main_issue_section {
+    background-image: url(../images/mcont2_bg.jpg);
+}
+
+.main_issue_wrap {
+    width: 1180px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    top: -30px;
+}
+
+.main_issue_box1 {
+    width: 393px;
+    height: 500px;
+    background-image: url(../images/해변.jpg);
+    background-size: cover;
+}
+
+.main_issue_box1 a div {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.main_issue_box2 {
+    width: 393px;
+    height: 500px;
+    background-image: url(../images/Tv.jpg);
+    background-size: cover;
+}
+
+.main_issue_box2 a div {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.main_issue_box3 {
+    width: 393px;
+    height: 500px;
+    background-image: url(../images/핫플.jpg);
+    background-size: cover;
+}
+
+.main_issue_box3 a div {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.main_issue_box1 a div:hover {
+    background: rgba(0, 0, 0, 0);
+
+}
+
+.main_issue_box2 a div:hover {
+    background: rgba(0, 0, 0, 0);
+}
+
+.main_issue_box3 a div:hover {
+    background: rgba(0, 0, 0, 0);
+}
+
+.main_issue_box a div {
+    position: relative;
+    text-align: center;
+}
+.main_issue_box a div em {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    width: 210px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transform: translateX(-50%);
+    color: #fff;
+    line-height: 49px;
+    transition: all .5s;
+    text-align: center;
+}
+
+.main_issue_box a div:hover em {
+    bottom: 90px;
+    background: white;
+    color: black;
+
+}
+
+.main_issue_box a div strong {
+    position: relative;
+    top: 100px;
+    font-size: 20px;
+    color: white;
+}
+
+.main_issue_box a div strong .icon1 {
+    width: 63px;
+    height: 49px;
+    display: block;
+    margin: 0 auto 20px;
+    background: url(../images/main_ir.png) no-repeat -21px -4px;
+
+}
+
+.main_issue_box a div strong .icon2 {
+	width: 52px;
+	height: 54px;
+    display: block;
+    margin: 0 auto 20px;
+    background: url(../images/main_ir.png)no-repeat -87px 0;
+
+
+}
+
+.main_issue_box a div strong .icon3 {
+	width: 47px;
+	height: 56px;
+    display: block;
+    margin: 0 auto 20px;
+    background: url(../images/main_ir.png) no-repeat -142px -1px;
+
+}
+

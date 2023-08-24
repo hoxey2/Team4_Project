@@ -1,0 +1,649 @@
+.main {
+    margin-bottom: 50px;
+}
+
+/* 메인 상단 이미지 */
+.travelAi_topImg_wrap {
+    width: 100%;
+    height: 330px;
+    background: url("/travelAi/images/travelAi/mainBackground.jpeg") center;
+    display: flex;
+    align-items: center;
+}
+
+.travelAi_topImgText_box {
+    width: 1180px;
+    margin: auto;
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px #888888;
+}
+
+/* 이미지 하단 가이드 바 */
+.travelAi_guideSns_container {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.travelAi_guideSns_wrap {
+    width: 1180px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.travelAi_guideList {
+    display: flex;
+    height: 100%;
+}
+
+.travelAi_guideList>li {
+    height: 100%;
+    padding: 0 35px 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/travelAi/images/travelAi/nav_arw.png") no-repeat top left/contain
+}
+
+.travelAi_guideList>li:first-child {
+    background: none;
+    padding: 0;
+    justify-content: start;
+    width: 40px;
+}
+
+.travelAi_guideList>li:last-child {
+    position: relative;
+}
+
+.travelAi_guideList>li:last-child>a {
+    color: #5289e6;
+    position: relative;
+}
+
+.travelAi_guideList>li:last-child>a::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #5289e6;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+
+.travelAi_guideList>li:nth-child(3)>a::before {
+    content: '▼';
+    position: absolute;
+    top: 0;
+    right: -20px;
+}
+
+/* 가이드바 3depth */
+.travelAi_3depthList {
+    position: absolute;
+    background: #fff;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    border: 1px solid #dfdfdf;
+    display: none;
+}
+
+.travelAi_3depthList li:not(:last-child) {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.travelAi_3depthList li {
+    text-align: center;
+    line-height: 50px;
+}
+
+.travelAi_3depthList li:hover a {
+    background: #5289e6;
+    color: #fff;
+}
+
+.travelAi_3depthList li>a {
+    display: block;
+    color: #777;
+}
+
+/* 메일, 프린트, sns */
+.travelAi_share_box {
+    display: flex;
+    align-items: center;
+}
+
+.travelAi_share_box ul {
+    display: flex;
+}
+
+.travelAi_share_box ul li {
+    margin-left: 4px;
+}
+
+.travelAi_share_box ul li:first-child {
+    margin-left: 0;
+}
+
+.travelAi_sendList {
+    position: relative;
+}
+
+.travelAi_sendList li {
+    margin-right: 15px;
+}
+
+.travelAi_sendList::after {
+    content: '';
+    width: 1px;
+    height: 17px;
+    background: #e5e5e5;
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+
+.travelAi_snsList {
+    margin-left: 15px;
+}
+
+.travelAi_content {
+    width: 1180px;
+    margin: auto;
+}
+
+.travelAi_content>h2 {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.travelAi_4dp_lnb_box {
+    width: 100%;
+    height: 60px;
+    margin-top: 50px;
+}
+
+.travelAi_4dp_lnb_box>ul {
+    width: 1180px;
+    height: 60px;
+    display: flex;
+}
+
+.travelAi_4dp_lnb_box>ul>li {
+    width: 590px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 18px;
+}
+
+.travelAi_4dp_lnb_box>ul>li>a>h3 {
+    display: block;
+    border: 1px solid #e6e6e6;
+}
+
+.travelAi_4dp_lnb_box>ul>li:first-child>a>h3 {
+    border-right: none;
+}
+
+.travelAi_4dp_focus {
+    background: #0051a4;
+    border-color: #0051a4;
+    color: #fff;
+}
+
+/* 오늘 준비한 당신의 맞춤 여행지 */
+.travelAi_today_content {
+    margin-top: 35px;
+    padding-bottom: 50px;
+    height: 420px;
+}
+
+.travelAi_today_content>h4 {
+    font-size: 26px;
+    padding-bottom: 28px;
+}
+
+.travelAi_today_hoverImg1 {
+    background: url("/travelAi/images/travelAi/toDayRegion1.jpeg")
+}
+
+.travelAi_today_hoverImg2 {
+    background: url("/travelAi/images/travelAi/toDayRegion2.jpeg")
+}
+
+.travelAi_today_hoverImg3 {
+    background: url("/travelAi/images/travelAi/toDayRegion3.jpeg")
+}
+
+.travelAi_today_hoverImg4 {
+    background: url("/travelAi/images/travelAi/toDayRegion4.jpeg")
+}
+
+.travelAi_today_slide_wrap {
+    height: 370px;
+}
+
+.travelAi_today_hover_wrap>ul {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.travelAi_today_hover_wrap>ul>li {
+    position: relative;
+    margin-right: 20px;
+    width: 250px;
+}
+
+.travelAi_today_hover_wrap>ul>li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 40%;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .9));
+}
+
+.travelAi_today_hover_wrap>ul>li:last-child {
+    margin-right: 0;
+}
+
+.travelAi_today_hover_wrap>ul>li:first-child {
+    width: 370px;
+}
+
+
+.travelAi_today_hover_wrap>ul>li>a>span {
+    display: block;
+    position: relative;
+    height: 340px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* 텍스트 박스 */
+.travelAi_todayText_box {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    width: 100%;
+    padding-bottom: 22px;
+}
+
+.travelAi_todayText_box>strong {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.travelAi_todayText_box>span {
+    font-weight: 300;
+}
+
+.travelAi_likeBtn {
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    top: 17px;
+    right: 17px;
+    background-position: 50% 0;
+    background-image: url("/travelAi/images/travelAi/like.png");
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.travelAi_likeBtnOn {
+    background-position: 50% -31px;
+}
+
+/* 내가 최근 본 여행지와 비슷한 여행지 추천! */
+.travelAi_recent_content {
+    margin-top: 35px;
+    /* padding-bottom: 50px; */
+    height: 505px;
+    position: relative;
+}
+
+.travelAi_recent_content>h4 {
+    font-size: 26px;
+    padding-bottom: 28px;
+}
+
+.travelAi_recent_wrap {
+    width: 100%;
+    height: 390.5px;
+}
+
+.travelAi_recent_wrap>ul {
+    display: flex;
+    overflow: hidden;
+}
+
+.travelAi_recent_wrap>ul>li {
+    position: relative;
+    width: 280px;
+    margin-right: 20px;
+}
+
+.travelAi_recent_wrap>ul>li:last-child {
+    margin-right: 0;
+}
+
+.travelAi_recentImg1 {
+    background: url("/travelAi/images/travelAi/recentRegion1.jpeg");
+}
+
+.travelAi_recentImg2 {
+    background: url("/travelAi/images/travelAi/recentRegion2.jpeg");
+}
+
+.travelAi_recentImg3 {
+    background: url("/travelAi/images/travelAi/recentRegion3.jpeg");
+}
+
+.travelAi_recentImg4 {
+    background: url("/travelAi/images/travelAi/recentRegion4.jpeg");
+}
+
+.travelAi_recentImg5 {
+    background: url("/travelAi/images/travelAi/recentRegion5.jpeg");
+}
+
+.travelAi_recentImg6 {
+    background: url("/travelAi/images/travelAi/recentRegion6.jpeg");
+}
+
+.travelAi_recentImg7 {
+    background: url("/travelAi/images/travelAi/recentRegion7.jpeg");
+}
+
+.travelAi_recentImg8 {
+    background: url("/travelAi/images/travelAi/recentRegion8.jpeg");
+}
+
+.travelAi_recent_wrap>ul>li>a>span {
+    display: block;
+    width: 280px;
+    height: 280px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.travelAi_recentText_box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.travelAi_recentText_box>strong {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 20px;
+    color: #333;
+    letter-spacing: -1px;
+    margin: 12px 0 8px;
+}
+
+.travelAi_recentText_box>span {
+    font-size: 16px;
+    color: #666;
+    font-weight: 300;
+}
+
+/* 슬라이드 버튼 */
+.travelAi_recent_wrap>button {
+    position: absolute;
+    text-indent: -9999px;
+    width: 36px;
+    height: 36px;
+    margin: 0;
+    top: 0;
+    background-position: 50% 0;
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.travelAi_recent_wrap>.travelAi_recentSlide_prevBtn {
+    background-image: url("/travelAi/images/travelAi/recentslide_prev_btn.png");
+    right: 38px;
+}
+
+.travelAi_recent_wrap>.travelAi_recentSlide_nextBtn {
+    background-image: url("/travelAi/images/travelAi/recentslide_next_btn.png");
+    right: 0;
+}
+
+/* 슬라이드 바 */
+.travelAi_scrollBar_box {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #e2dfdf;
+    bottom: 72px;
+}
+
+.travelAi_scrollBar {
+    position: absolute;
+    width: 236px;
+    height: 100%;
+    background: #333;
+}
+
+/* 어제의 인기 여행지 */
+.travelAi_yester_content {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+/* 제목 */
+.travelAi_yesterTitle_box {
+    width: 100%;
+    display: flex;
+    padding-bottom: 28px;
+    align-items: center;
+}
+
+.travelAi_yesterTitle_box>h4 {
+    font-size: 26px;
+}
+
+.travelAi_yesterTitle_box>button {
+    text-indent: -9999px;
+    width: 27px;
+    height: 28px;
+    background: url("/travelAi/images/travelAi/btn_tit_layer.png");
+    border: 0;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.travelAi_yesterSub_box {
+    position: absolute;
+    border: 1px solid #cac9c9;
+    box-shadow: 4px 6px 18px 0px rgba(102, 102, 102, 0.16);
+    top: -25px;
+    left: 255px;
+    padding: 15px;
+    z-index: 10;
+    color: #767676;
+    display: none;
+}
+
+.travelAi_yesterSub_box::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: -10px;
+    width: 11px;
+    height: 9px;
+    background: url("/travelAi/images/travelAi/layer_arw02.png") no-repeat;
+    transform: rotate(-90deg);
+}
+
+/* 리스트 */
+.travelAi_yesterList_wrap {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    overflow: hidden;
+}
+
+.travelAi_yesterList_box>ul>li>a>span {
+    display: block;
+    width: 280px;
+    height: 280px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.travelAi_yesterList_box>ul>li>a>span::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .6));
+}
+
+.travelAi_yester_img1 {
+    background: url("/travelAi/images/travelAi/yesterRegion1.jpeg");
+}
+
+.travelAi_yester_img2 {
+    background: url("/travelAi/images/travelAi/yesterRegion2.jpeg");
+}
+
+.travelAi_yester_img3 {
+    background: url("/travelAi/images/travelAi/yesterRegion3.jpeg");
+}
+
+.travelAi_yester_img4 {
+    background: url("/travelAi/images/travelAi/yesterRegion4.jpeg");
+}
+
+.travelAi_yester_img5 {
+    background: url("/travelAi/images/travelAi/yesterRegion5.jpeg");
+}
+
+.travelAi_yester_img6 {
+    background: url("/travelAi/images/travelAi/yesterRegion6.jpeg");
+}
+
+.travelAi_yester_img7 {
+    background: url("/travelAi/images/travelAi/yesterRegion7.jpeg");
+}
+
+.travelAi_yester_img8 {
+    background: url("/travelAi/images/travelAi/yesterRegion8.jpeg");
+}
+
+.travelAi_yester_img9 {
+    background: url("/travelAi/images/travelAi/yesterRegion9.jpeg");
+}
+
+.travelAi_yester_img10 {
+    background: url("/travelAi/images/travelAi/yesterRegion10.jpeg");
+}
+
+.travelAi_yester_img11 {
+    background: url("/travelAi/images/travelAi/yesterRegion11.bmp");
+}
+
+.travelAi_yester_img12 {
+    background: url("/travelAi/images/travelAi/yesterRegion12.jpeg");
+}
+
+.travelAi_yester_img13 {
+    background: url("/travelAi/images/travelAi/yesterRegion13.jpeg");
+}
+
+.travelAi_yester_img14 {
+    background: url("/travelAi/images/travelAi/yesterRegion14.jpeg");
+}
+
+.travelAi_yester_img15 {
+    background: url("/travelAi/images/travelAi/yesterRegion15.jpeg");
+}
+
+.travelAi_yester_img16 {
+    background: url("/travelAi/images/travelAi/yesterRegion16.jpeg");
+}
+
+.travelAi_yesterList_box {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.travelAi_yesterList_box>ul>li {
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.travelAi_yesterList_box>ul>li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.travelAi_yesterList_box>ul>li>a {
+    display: flex;
+    justify-content: center;
+}
+
+.travelAi_yesterList_box>ul>li>a>strong {
+    position: absolute;
+    bottom: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* 슬라이더 버튼 */
+.travelAi_yesterList_wrap>button {
+    position: absolute;
+    text-indent: -9999px;
+    width: 36px;
+    height: 36px;
+    margin: 0;
+    top: 0;
+    background-position: 50% 0;
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.travelAi_yesterSlide_prevBtn {
+    background-image: url("/travelAi/images/travelAi/recentslide_prev_btn.png");
+    right: 38px;
+}
+
+.travelAi_yesterSlide_nextBtn {
+    background-image: url("/travelAi/images/travelAi/recentslide_next_btn.png");
+    right: 0;
+}

@@ -1,0 +1,315 @@
+.main {
+    margin-bottom: 50px;
+}
+
+/* skip menu */
+.skip_menu {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.skip_menu a {
+    width: 100%;
+    position: absolute;
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+    top: -50px;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+
+.skip_menu a:active,
+.skip_menu a:focus {
+    top: 0;
+    z-index: 1001;
+}
+
+
+/* 메인 상단 이미지 */
+.region_topImg_wrap {
+    width: 100%;
+    height: 330px;
+    background: url("/region/images/mainBackground.jpeg") center;
+    display: flex;
+    align-items: center;
+}
+
+.region_topImgText_box {
+    width: 1180px;
+    margin: auto;
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px #888888;
+}
+
+/* 이미지 하단 가이드 바 */
+.region_guideSns_container {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.region_guideSns_wrap {
+    width: 1180px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.region_guideList {
+    display: flex;
+    height: 100%;
+}
+
+.region_guideList>li {
+    height: 100%;
+    padding: 0 35px 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/region/images/nav_arw.png") no-repeat top left/contain
+}
+
+.region_guideList>li:first-child {
+    background: none;
+    padding: 0;
+    justify-content: start;
+    width: 40px;
+}
+
+.region_guideList>li:last-child {
+    position: relative;
+}
+
+.region_guideList>li:last-child>a {
+    color: #5289e6;
+    position: relative;
+}
+
+.region_guideList>li:last-child>a::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #5289e6;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+
+.region_guideList>li:nth-child(3)>a::before {
+    content: '▼';
+    position: absolute;
+    top: 0;
+    right: -20px;
+}
+
+/* 가이드바 3depth */
+.region_3depthList {
+    position: absolute;
+    background: #fff;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    border: 1px solid #dfdfdf;
+    display: none;
+}
+
+.region_3depthList li:not(:last-child) {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.region_3depthList li {
+    text-align: center;
+    line-height: 50px;
+}
+
+.region_3depthList li:hover a {
+    background: #5289e6;
+    color: #fff;
+}
+
+.region_3depthList li>a {
+    display: block;
+    color: #777;
+}
+
+/* 메일, 프린트, sns */
+.region_share_box {
+    display: flex;
+    align-items: center;
+}
+
+.region_share_box ul {
+    display: flex;
+}
+
+.region_share_box ul li {
+    margin-left: 4px;
+}
+
+.region_share_box ul li:first-child {
+    margin-left: 0;
+}
+
+.region_sendList {
+    position: relative;
+}
+
+.region_sendList li {
+    margin-right: 15px;
+}
+
+.region_sendList::after {
+    content: '';
+    width: 1px;
+    height: 17px;
+    background: #e5e5e5;
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+
+.region_snsList {
+    margin-left: 15px;
+}
+
+/* 여행지 목록 */
+.screenout {
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    position: absolute;
+    z-index: -9999;
+}
+
+.region_cityContent_wrap {
+    width: 1180px;
+    margin: 50px auto 0;
+}
+
+.region_cityContent_wrap h2 {
+    font-size: 30px;
+}
+
+.region_city_box {
+    width: 1180px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    margin-top: 50px;
+}
+
+.region_city_box a {
+    display: block;
+    width: 196.59px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    border-bottom: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+}
+
+.region_city_box_active {
+    background: #0051a4;
+    color: #fff;
+    border-color: #0051a4;
+}
+
+.region_destinationCont_container {
+    width: 1180px;
+    margin: 35px auto 0;
+    border-top: 2px solid #2d58a0;
+}
+
+.region_destinationCont_container>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.region_destinationCont_container>ul>li {
+    width: 277px;
+    height: 267px;
+    margin-top: 20px;
+}
+
+.region_destiImg_wrap {
+    width: 277px;
+    height: 158px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.region_destiImg_box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.region_destiImg_box>a>img {
+    height: 100%;
+}
+
+.region_destinationCont_container>ul>li>a>h4 {
+    font-size: 18px;
+    padding: 8px 0 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 2줄 ellipse 기능 */
+.region_destinationCont_container ul li>a>p {
+    width: 100%;
+    color: #777;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.region_destiAddr_box {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.region_destiAddr_box>span {
+    position: relative;
+    padding-right: 8px;
+    margin-right: 8px;
+}
+
+.region_destiAddr_box>span:not(:last-child)::after {
+    content: '';
+    width: 1px;
+    height: 80%;
+    top: 10%;
+    right: 0;
+    background: #d8d8d8;
+    position: absolute;
+}
+
+.region_destiAddr_box>span:first-child {
+    color: #8c8c8c;
+}
+
+.region_destiAddr_box>span:nth-child(2) {
+    color: #2d58a0;
+}
+
+.region_destiAddr_box>span:last-child {
+    color: #0051A4;
+}
+

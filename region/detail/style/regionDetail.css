@@ -1,0 +1,289 @@
+/* 메인 상단 이미지 */
+.detail_topImg_wrap {
+    width: 100%;
+    height: 330px;
+    background: url("/region/images/mainBackground.jpeg") center;
+    display: flex;
+    align-items: center;
+}
+
+.detail_topImgText_box {
+    width: 1180px;
+    margin: auto;
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px #888888;
+}
+
+/* 이미지 하단 가이드 바 */
+.detail_guideSns_container {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.detail_guideSns_wrap {
+    width: 1180px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail_guideList {
+    display: flex;
+    height: 100%;
+}
+
+.detail_guideList>li {
+    height: 100%;
+    padding: 0 35px 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/region/images/nav_arw.png") no-repeat top left/contain
+}
+
+.detail_guideList>li:first-child {
+    background: none;
+    padding: 0;
+    justify-content: start;
+    width: 40px;
+}
+
+.detail_guideList>li:last-child {
+    position: relative;
+}
+
+.detail_guideList>li:last-child>a {
+    color: #5289e6;
+    position: relative;
+}
+
+.detail_guideList>li:last-child>a::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #5289e6;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+
+.detail_guideList>li:nth-child(3)>a::before {
+    content: '▼';
+    position: absolute;
+    top: 0;
+    right: -20px;
+}
+
+/* 가이드바 3depth */
+.detail_3depthList {
+    position: absolute;
+    background: #fff;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    border: 1px solid #dfdfdf;
+    display: none;
+}
+
+.detail_3depthList li {
+    text-align: center;
+    line-height: 50px;
+}
+
+.detail_3depthList li>a {
+    color: #777;
+}
+
+/* 메일, 프린트, sns */
+.detail_share_box {
+    display: flex;
+    align-items: center;
+}
+
+.detail_share_box ul {
+    display: flex;
+}
+
+.detail_share_box ul li {
+    margin-left: 4px;
+}
+
+.detail_share_box ul li:first-child {
+    margin-left: 0;
+}
+
+.detail_sendList {
+    position: relative;
+}
+
+.detail_sendList li {
+    margin-right: 15px;
+}
+
+.detail_sendList::after {
+    content: '';
+    width: 1px;
+    height: 17px;
+    background: #e5e5e5;
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+
+.detail_snsList {
+    margin-left: 15px;
+}
+
+/* 여행지 목록 */
+.screenout {
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    position: absolute;
+    z-index: -9999;
+}
+
+.detail_cityContent_wrap {
+    width: 1180px;
+    margin: 90px auto 50px;
+}
+
+.detail_cityContent_wrap h2 {
+    font-size: 30px;
+}
+
+.detail_city_box_active {
+    background: #0051a4;
+    color: #fff;
+    border-color: #0051a4;
+}
+
+.detail_title_box {
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 30px;
+    padding-bottom:40px;
+    border-bottom: 2px solid rgb(45, 88, 160);
+}
+
+.detail_imgSlider_container {
+    margin-top: 45px;
+    height: 625px;
+    position: relative;
+}
+
+.detail_imgSlider_wrap {
+    position: relative;
+    width: 1120px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.detail_imgSlider_box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* transform: translateX(-1120px); */
+}
+
+.detail_imgSlider_box img {
+    width: 100%;
+    height: 100%;
+}
+
+.detail_sliderPrevBtn, .detail_sliderNextBtn {
+    position: absolute;
+    border: 0;
+    text-indent: -9999px;
+    width: 63px;
+    height: 63px;
+    overflow: hidden;
+    background: url("/region/detail/images/slide_prevbtn.png");
+    top: 281px;
+}
+
+.detail_imgSlider_wrap .detail_sliderNextBtn {
+    transform: rotate(180deg);
+    right: 0;
+}
+
+.detail_imgSlider_wrap>span {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    background:rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    top: 20px;
+    right: 20px;
+}
+
+.detail_moreText_wrap {
+    width: 1120px;
+    margin: 24px auto 0;
+}
+
+.detail_moreText_wrap>h4 {
+    font-size: 26px;
+    padding: 31px 0 9px;
+    border-bottom: 2px solid rgb(45, 88, 160);
+}
+
+.detail_moreText_wrap>p {
+    padding-top: 30px;
+    color: #333;
+}
+
+.detail_guideText_box {
+    padding: 30px 0 50px 0;
+}
+
+.detail_guideText_box>ul>h5 {
+    padding-left: 40px;
+    font-size: 24px;
+    background: url("/region/detail/images/pinpoint.png") no-repeat left/contain;
+}
+
+.detail_guideText_box>ul>li {
+    padding-left: 30px;
+    margin-top: 17px;
+    background: url("/region/detail/images/listFlag.png") no-repeat left top;
+    font-size: 18px;
+    display: flex;
+}
+
+.detail_guideText_box>ul>li>span:first-child {
+    display: block;
+    width: 112px;
+    color: #2d58a0;
+}
+
+.detail_guideText_box>ul>li>span:last-child {
+}
+
+.detail_3depth_box {
+    padding-top: 30px;
+    margin-top: 35px;
+    border-top: 1px solid #d1d1d1;
+}
+
+.detail_3depth_box>a {
+    display: block;
+    padding: 10px 35px;
+    text-align: center;
+    float: right;
+    background: #5289e6;
+    color: #fff;
+}

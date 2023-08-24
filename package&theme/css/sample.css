@@ -1,0 +1,127 @@
+/* main_content */
+.main_content{
+    width: 100%;
+}
+.sample_title h3{
+    width: 1180px;
+    height: 132px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: #000000;
+    border-bottom: 2px solid #2d58a0;
+}
+/* slider */
+.sample_slider{
+    margin: 45px 0;
+    position: relative;
+}
+.sample_slideImg_wrap{
+    margin: auto;
+    width: 1180px;
+    height: 435px;
+    overflow: hidden;
+}
+.sample_slideImg_box{
+    position: relative;
+    left: -1180px;
+    display: flex;
+}
+.sample_slideImg_box img{
+    width: 1180px;
+    height: 435px;
+}
+.sample_slide_btn{
+    position: relative;
+    bottom: calc(435px / 2);
+}
+.sample_slideBtn_prev{
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+}
+.sample_slideBtn_next{
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* sample_card_bundle */
+.sample_card_bundle{
+    width: 1180px;
+    margin: auto;
+}
+
+/* card type 1*/
+.sample_cardWrap_type1{
+    display: flex;
+    margin-bottom: 20px;
+}
+.sample_card_type1{
+    width: 292.5px;
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+}
+.sample_card_type1:first-child{
+    margin-left: 0;
+}
+.sample_card_type1:last-child{
+    margin-right: 0;
+}
+.sample_card_type1 h4{
+    margin: 5px 0 15px;
+}
+.sample_card_type1 img{
+    width: 257px;
+    height: 139px;
+    border: 1px solid #e6e6e690;
+}
+
+/* card type 2 */
+.sample_cardWrap_type2{
+    width: 1180px;
+    display: flex;
+}
+.sample_card_type2{
+    width: 557px;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 20px;
+}
+.sample_card_type2 h4{
+    margin: 5px 0 15px;
+}
+.sample_card_type2:first-child{
+    margin-right: 10px;
+    padding: 10px
+}
+.sample_card_type2:last-child{
+    margin-left: 10px;
+    padding: 10px
+}
+.sample_cardType2Parts_wrap{
+    display: flex;
+}
+.sample_cardType2_parts{
+    margin-right: 20px;
+}
+.sample_cardType2_parts img{
+    width: 268px;
+    height: 180px;
+    border: 1px solid #e6e6e690;
+}
+.sample_cardType2_parts h5{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.sample_cardType2_parts span{
+    display: block;
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+    
+}

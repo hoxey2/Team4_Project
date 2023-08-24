@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코스 예시</title>
+    <link rel="icon" type="image/ico" href="../images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <style>
+        .customoverlay {position:relative;bottom:60px;border-radius:0;border: 1px solid #ccc;border-bottom:2px solid #ddd;float:left;}
+        .customoverlay:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;}
+        .customoverlay a {display:block;text-decoration:none;color:#000;text-align:center;border-radius:0;font-size:20px;font-weight:bold;overflow:hidden;background: #d95050;background: rgba(45,88,160,1)}
+        .customoverlay .title {display:block;text-align:center;background:#fff;margin-right:35px;padding:10px 15px;font-size:20px;font-weight:bold;}
+        .customoverlay .courseNumber01 {position:absolute;bottom:0;right:13px;content:"";width:35px;height:48px;background:url(../images/1.png) no-repeat right center;}
+        .customoverlay .courseNumber02 {position:absolute;bottom:0;right:13px;content:"";width:35px;height:48px;background:url(../images/2.png) no-repeat right center;}
+        .customoverlay .courseNumber03 {position:absolute;bottom:0;right:13px;content:"";width:35px;height:48px;background:url(../images/3.png) no-repeat right center;}
+        .customoverlay .courseNumber04 {position:absolute;bottom:0;right:13px;content:"";width:35px;height:48px;background:url(../images/4.png) no-repeat right center;}
+        .customoverlay .courseNumber05 {position:absolute;bottom:0;right:13px;content:"";width:35px;height:48px;background:url(../images/5.png) no-repeat right center;}
+        .customoverlay .courseNumber06 {position:absolute;bottom:0;right:13px;content:"";width:35px;height:48px;background:url(../images/6.png) no-repeat right center;}
+        .customoverlay .courseNumber07 {position:absolute;bottom:0;right:13px;content:"";width:35px;height:48px;background:url(../images/7.png) no-repeat right center;}
+        .customoverlay .courseNumber08 {position:absolute;bottom:0;right:13px;content:"";width:35px;height:48px;background:url(../images/8.png) no-repeat right center;}
+        .customoverlay:after {content:'';position:absolute;margin-left:-12px;left:50%;bottom:-12px;width:22px;height:12px;background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+    </style>
+    <!-- <link rel="stylesheet" href="../style/header.css"> -->
+    
+</head>
+<body>
+    <header class="header">
+        
+    </header>
+    <main class="main">
+        <div class="course_title_wrap">
+            <div class="course_titleContent_box">
+                <h2 class="course_title">추천코스</h2>
+            </div>
+        </div>
+        <div class="course_subGnb_wrap">
+            <div class="course_subGnbContent_wrap">
+                <ul class="course_subGnbList">
+                    <li class="course_subGnbListFirstItem">
+                        <a class="course_subGnbListFirstItemLink" href="#none">
+                            <img src="../images/home_ic.jpg" alt="메인 페이지로">
+                        </a>
+                    </li>
+                    <li class="course_subGnbListItem">
+                        <span class="course_subGnbListItemText">여행정보</span>
+                    </li>
+                    <li class="course_subGnbListItem">
+                        <a class="course_subGnbListItemLink" href="#none">
+                            추천코스
+                            <span class="course_subGnbListItemLinkText"></span>
+                            <i class="fa-solid fa-caret-down course_subGnbListItemLinkTriangle"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="course_subGnbSns_box">
+                    <ul class="course_subGnbSnsFuncList">
+                        <li class="course_subGnbSnsFuncListItem">
+                            <a href="#none">
+                                <img src="../images/mail_ic.png" alt="">
+                            </a>
+                        </li>
+                        <li class="course_subGnbSnsFuncListItem">
+                            <a href="#none">
+                                <img src="../images/print_ic.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="course_subGnbSnsList">
+                        <li class="course_subGnbSnsListItem course_subGnbSnsListItem--noMargin">
+                            <a href="#none">
+                                <img class="course_subGnbSnsListItemLinkImg" src="../images/copy2_ic.png" alt="">
+                            </a>
+                        </li>
+                        <li class="course_subGnbSnsListItem">
+                            <a href="#none">
+                                <img class="course_subGnbSnsListItemLinkImg" src="../images/face_ic.png" alt="">
+                            </a>
+                        </li>
+                        <li class="course_subGnbSnsListItem">
+                            <a href="#none">
+                                <img class="course_subGnbSnsListItemLinkImg" src="../images/twi_ic.png" alt="">
+                            </a>
+                        </li>
+                        <li class="course_subGnbSnsListItem">
+                            <a href="#none">
+                                <img class="course_subGnbSnsListItemLinkImg" src="../images/kakao_ic.png" alt="">
+                            </a>
+                        </li>
+                        <li class="course_subGnbSnsListItem">
+                            <a href="#none">
+                                <img class="course_subGnbSnsListItemLinkImg" src="../images/naver_ic.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main_content main_content--greyBorder">
+            <section class="courseContent_title_wrap">
+                <div class="courseContent_titleContent">
+                    <h3 class="courseContent_titleContentTitle">태곳적 한반도를 만나 오늘의 나를 새롭게하는 리버스(re-birth) 코스</h3>
+                    <p class="courseContent_titleContentText">경기도 연천군</p>
+                </div>
+            </section>
+            <section class="courseContent_content_wrap">
+                <p class="courseContent_contentText">연천, 철원, 화천, 인제, 고성에서 태곳적 한반도를 엿볼 수 있다. 깊고 깊은 숲과 호수의 자연 속을 거니는 코스로 잘 가꿔진 수목원과 최전방 통일 전망대를 두루 만난다.</p>
+                <div class="courseContent_contentMap_wrap">
+                    <div id="map" style="width:1180px;height:500px;"></div>
+                </div>
+                
+                <div class="courseContent_contentSlider_wrap">
+                    <div class="slider-wrap">
+                        <div class="swiper">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <em class="slide-course">1</em>
+                                    <a class="slide-link" href="#none">
+                                        <span class="slide-linkImg05"></span>
+                                        <div class="slide-linkText_box">
+                                            <span class="slide-linkText">spot 1</span>
+                                            <hr class="slide-linkBreak">
+                                            <span class="slide-linkRegion">경기도 연천군</span>
+                                            <span class="slide-linkCourse">전곡선사박물관</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <em class="slide-course">2</em>
+                                    <a class="slide-link" href="#none">
+                                        <span class="slide-linkImg08"></span>
+                                        <div class="slide-linkText_box">
+                                            <span class="slide-linkText">spot 2</span>
+                                            <hr class="slide-linkBreak">
+                                            <span class="slide-linkRegion">경기도 연천군</span>
+                                            <span class="slide-linkCourse">재인폭포 (한탄강 국가지질공원)</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <em class="slide-course">3</em>
+                                    <a class="slide-link" href="#none">
+                                        <span class="slide-linkImg07"></span>
+                                        <div class="slide-linkText_box">
+                                            <span class="slide-linkText">spot 3</span>
+                                            <hr class="slide-linkBreak">
+                                            <span class="slide-linkRegion">강원도 철원군</span>
+                                            <span class="slide-linkCourse">철원 한탄강 주상절리길(잔도)</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <em class="slide-course">4</em>
+                                    <a class="slide-link" href="#none">
+                                        <span class="slide-linkImg03"></span>
+                                        <div class="slide-linkText_box">
+                                            <span class="slide-linkText">spot 4</span>
+                                            <hr class="slide-linkBreak">
+                                            <span class="slide-linkRegion">강원도 화천군</span>
+                                            <span class="slide-linkCourse">비수구미마을</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <em class="slide-course">5</em>
+                                    <a class="slide-link" href="#none">
+                                        <span class="slide-linkImg06"></span>
+                                        <div class="slide-linkText_box">
+                                            <span class="slide-linkText">spot 5</span>
+                                            <hr class="slide-linkBreak">
+                                            <span class="slide-linkRegion">강원도 화천군</span>
+                                            <span class="slide-linkCourse">화천 반지교&아를테마수목공원</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <em class="slide-course">6</em>
+                                    <a class="slide-link" href="#none">
+                                        <span class="slide-linkImg01"></span>
+                                        <div class="slide-linkText_box">
+                                            <span class="slide-linkText">spot 6</span>
+                                            <hr class="slide-linkBreak">
+                                            <span class="slide-linkRegion">강원도 인제군</span>
+                                            <span class="slide-linkCourse">국립 방태산자연휴양림</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <em class="slide-course">7</em>
+                                    <a class="slide-link" href="#none">
+                                        <span class="slide-linkImg02"></span>
+                                        <div class="slide-linkText_box">
+                                            <span class="slide-linkText">spot 7</span>
+                                            <hr class="slide-linkBreak">
+                                            <span class="slide-linkRegion">강원도 고성군</span>
+                                            <span class="slide-linkCourse">고성 송지호 철새길</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <em class="slide-course">8</em>
+                                    <a class="slide-link" href="#none">
+                                        <span class="slide-linkImg04"></span>
+                                        <div class="slide-linkText_box">
+                                            <span class="slide-linkText">spot 8</span>
+                                            <hr class="slide-linkBreak">
+                                            <span class="slide-linkRegion">강원도 고성군</span>
+                                            <span class="slide-linkCourse">고성 통일전망타워</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <section class="courseContent_sliderCourse_wrap">
+                        <section class="courseContent_sliderCourseContent_wrap">
+                            <div class="courseContent_sliderCourseContentInfo_wrap">
+                                <div class="courseContent_sliderCourseContentInfoTitle_wrap">
+                                    <div class="courseContent_sliderCourseContentInfoTitleContent_box">
+                                        <span class="courseContent_sliderCourseContentInfoSpot">spot 1</span>
+                                        <hr class="courseContent_sliderCourseContentInfoBreak">
+                                    </div>
+                                        <h4 class="courseContent_sliderCourseContentInfoTitle">
+                                            <span class="courseContent_sliderCourseContentInfoTitleText">경기도 연천군</span>
+                                            전곡선사박물관
+                                        </h4>
+                                </div>
+                                <div class="courseContent_sliderCourseContentInfoText_wrap">
+                                    <div class="courseContent_sliderCourseContentInfoText_box">
+                                        <p class="courseContent_sliderCourseContentInfoTextTitle">다양한 고고학 체험이 가능한 열려있는 박물관</p>
+                                        <p class="courseContent_sliderCourseContentInfoTextText">전곡선사박물관은 동아시아 최초의 아슐리안형 주먹도끼 발견으로 세계 구석기 연구의 역사를 다시 쓰게 만들었던 역사적 현장인 전곡리 구석기유적에 건립된 유적박물관이다. 전곡리 구석기유적지에서 출토된 아슐리안형 주먹도끼등의 구석기 유물들을 중심으로 인류의 진화와 구석기시대 문화를 체계적으로 이해할 수 있도록 다양한 주제의 유물들로 전시공간을 구성하였다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <section class="courseContent_sliderCourseContentImg_wrap">
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg13"></div>
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg14"></div>
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg15"></div>
+                            </section>
+                            <section class="courseContent_sliderCourseContentMoreInfo_box">
+                                <i class="fa-sharp fa-solid fa-location-dot courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">경기도 연천군 전곡읍 평화로 443번길 2</span>
+                                <i class="fa-solid fa-phone-volume courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">031-830-5600,2</span>
+                                <i class="fa-sharp fa-solid fa-clock courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">매주 화요일 ~ 일요일 10:00 ~ 18:00</span>
+                                <i class="fa-solid fa-house courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <a class="courseContent_sliderCourseContentMoreInfoText" href="#none">https://jgpm.ggcf.kr/</a>
+                                <i class="fa-solid fa-plane courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">휴일 : 월요일(단, 월요일이 공휴일인 경우 제외)</span>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">1월 1일</span>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">설날/추석</span>
+                                <i class="fa-solid fa-tag courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">무료</span>
+                            </section>
+                            <section class="courseContent_sliderCourseContentHashtag_box">
+                                <ul class="courseContent_sliderCourseContentHashtagList">
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#가족여행</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#고고학</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#고고학체험</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#문화시설</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#박물관</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#선사박물관</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#아이와함께</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#이색체험</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#전곡선사박물관</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#전시</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#전시관</a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </section>
+                        
+                    </section>
+                    <section class="courseContent_sliderCourse_wrap hidden">
+                        <section class="courseContent_sliderCourseContent_wrap">
+                            <div class="courseContent_sliderCourseContentInfo_wrap">
+                                <div class="courseContent_sliderCourseContentInfoTitle_wrap">
+                                    <div class="courseContent_sliderCourseContentInfoTitleContent_box">
+                                        <span class="courseContent_sliderCourseContentInfoSpot">spot 2</span>
+                                        <hr class="courseContent_sliderCourseContentInfoBreak">
+                                    </div>
+                                        <h4 class="courseContent_sliderCourseContentInfoTitle">
+                                            <span class="courseContent_sliderCourseContentInfoTitleText">경기도 연천군</span>
+                                            재인폭포 (한탄강 국가지질공원)
+                                        </h4>
+                                </div>
+                                <div class="courseContent_sliderCourseContentInfoText_wrap">
+                                    <div class="courseContent_sliderCourseContentInfoText_box">
+                                        <p class="courseContent_sliderCourseContentInfoTextTitle">한탄강에서 가장 아름답고 멋진 경관을 자랑하고 있는 곳</p>
+                                        <p class="courseContent_sliderCourseContentInfoTextText">재인폭포는 한탄강에서 가장 아름답고 멋진 경관을 자랑하고 있는 곳으로 오래 전부터 명승지로서 널리 알려져 있다. 재인폭포는 북쪽에 있는 지장봉에서 흘러 내려온 작은 하천이 높이 약 18m에 달하는 현무암 주상절리 절벽으로 쏟아지는 것이 그야말로 장관을 이룬다. 또한, 재인폭포 주변에는 천연기념물 어름치와 멸종위기종인 분홍장구채 등의 서식지로도 알려져 있으며 폭포의 이름과 관련된 아름다운 사랑이야기도 전해오고 있다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <section class="courseContent_sliderCourseContentImg_wrap">
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg22"></div>
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg23"></div>
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg24"></div>
+                            </section>
+                            <section class="courseContent_sliderCourseContentMoreInfo_box">
+                                <i class="fa-sharp fa-solid fa-location-dot courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">경기도 연천군 연천읍 부곡리 192</span>
+                                <i class="fa-solid fa-phone-volume courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">031-839-2289</span>
+                                <i class="fa-sharp fa-solid fa-clock courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">하절기 10:00 ~ 17:30</span>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">동절기 10:00 ~ 16:00</span>
+                                <i class="fa-solid fa-house courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <a class="courseContent_sliderCourseContentMoreInfoText" href="#none">http://www.hantangeopark.kr/</a>
+                                <i class="fa-solid fa-plane courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">휴일 : 연중무휴</span>
+                                <i class="fa-solid fa-tag courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">무료</span>
+                            </section>
+                            <section class="courseContent_sliderCourseContentHashtag_box">
+                                <ul class="courseContent_sliderCourseContentHashtagList">
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#23_24한국관광100선</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#infp상상여행</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#가볼래-터</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#관광지</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#국가지질공원</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#서울근교여행</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#수도권</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#여행구독</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#자연</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#자연속으로</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#자연여행</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#자연좋은곳</a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="courseContent_sliderCourse_wrap hidden">
+                        <section class="courseContent_sliderCourseContent_wrap">
+                            <div class="courseContent_sliderCourseContentInfo_wrap">
+                                <div class="courseContent_sliderCourseContentInfoTitle_wrap">
+                                    <div class="courseContent_sliderCourseContentInfoTitleContent_box">
+                                        <span class="courseContent_sliderCourseContentInfoSpot">spot 3</span>
+                                        <hr class="courseContent_sliderCourseContentInfoBreak">
+                                    </div>
+                                        <h4 class="courseContent_sliderCourseContentInfoTitle">
+                                            <span class="courseContent_sliderCourseContentInfoTitleText">강원도 철원군</span>
+                                            철원 한탄강 주상절리길(잔도)
+                                        </h4>
+                                </div>
+                                <div class="courseContent_sliderCourseContentInfoText_wrap">
+                                    <div class="courseContent_sliderCourseContentInfoText_box">
+                                        <p class="courseContent_sliderCourseContentInfoTextTitle">유네스코 세계지질공원으로 등재된 철원 한탄강의 독특하고 아름다운 주상절리를 조망하기 위해 조성된 주상절리길</p>
+                                        <p class="courseContent_sliderCourseContentInfoTextText">유네스코(UNESCO)세계지질공원으로 등재된 한탄강유역에 위치한 철원 한탄강 주상절리길(잔도)은 한탄강의 천혜의 비경을 근접 조망할 수 있다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <section class="courseContent_sliderCourseContentImg_wrap">
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg19"></div>
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg20"></div>
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg21"></div>
+                            </section>
+                            <section class="courseContent_sliderCourseContentMoreInfo_box">
+                                <i class="fa-sharp fa-solid fa-location-dot courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">강원도 철원군 길말읍 군탄리 산 78-2</span>
+                                <i class="fa-solid fa-phone-volume courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">033-450-5532</span>
+                                <i class="fa-sharp fa-solid fa-clock courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">하절기 09:00 ~ 18:00 (입장마감 16시)</span>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">동절기 09:00 ~ 17:00 (입장마감 15시)</span>
+                                <i class="fa-solid fa-house courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <a class="courseContent_sliderCourseContentMoreInfoText" href="#none">https://www.cwg.go.kr/www/index.do</a>
+                                <i class="fa-solid fa-plane courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">휴일 : 매주 화요일</span>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">1월 1일</span>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">설날 당일</span>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">추석 당일</span>
+                                <i class="fa-solid fa-tag courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">성인 : 10,000원 (철원상품권 5,000원 교환)</span>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">청소년 : 4,000원 (철원상품권 2,000원 교환)</span>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">어린이 : 3,000원 (철원상품권 1,000원 교환)</span>
+                            </section>
+                            <section class="courseContent_sliderCourseContentHashtag_box">
+                                <ul class="courseContent_sliderCourseContentHashtagList">
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#레포츠</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#유네스코세계지질공원</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#주상절리</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#한탄강</a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="courseContent_sliderCourse_wrap hidden">
+                        <section class="courseContent_sliderCourseContent_wrap">
+                            <div class="courseContent_sliderCourseContentInfo_wrap">
+                                <div class="courseContent_sliderCourseContentInfoTitle_wrap">
+                                    <div class="courseContent_sliderCourseContentInfoTitleContent_box">
+                                        <span class="courseContent_sliderCourseContentInfoSpot">spot 4</span>
+                                        <hr class="courseContent_sliderCourseContentInfoBreak">
+                                    </div>
+                                        <h4 class="courseContent_sliderCourseContentInfoTitle">
+                                            <span class="courseContent_sliderCourseContentInfoTitleText">강원도 화천군</span>
+                                            비수구미마을
+                                        </h4>
+                                </div>
+                                <div class="courseContent_sliderCourseContentInfoText_wrap">
+                                    <div class="courseContent_sliderCourseContentInfoText_box">
+                                        <p class="courseContent_sliderCourseContentInfoTextTitle">오염되지 않은 청정자연을 보유하고 있는, 휴양과 낚시 등을 즐기기에 좋은 비수구미 계곡</p>
+                                        <p class="courseContent_sliderCourseContentInfoTextText">환경오염 없는 맑고 깨끗한 계곡으로 유명한 비수구미마을. 특히, 자연원시림과 넓은 바위가 계곡을 따라 밀집되어 있다. 파로호와 함께 가족단위 관광객들을 위한 가을 명소이다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <section class="courseContent_sliderCourseContentImg_wrap">
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg07"></div>
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg08"></div>
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg09"></div>
+                            </section>
+                            <section class="courseContent_sliderCourseContentMoreInfo_box">
+                                <i class="fa-sharp fa-solid fa-location-dot courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">강원도 화천군 화천읍 비수구미길</span>
+                                <i class="fa-solid fa-phone-volume courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">033-440-2575</span>
+                                <i class="fa-sharp fa-solid fa-clock courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">연중무휴</span>
+                                <i class="fa-solid fa-house courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <a class="courseContent_sliderCourseContentMoreInfoText" href="#none">http://tour.ihc.go.kr/</a>
+                                <i class="fa-solid fa-plane courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">휴일 : 연중무휴</span>
+                                <i class="fa-solid fa-tag courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">무료</span>
+                            </section>
+                            <section class="courseContent_sliderCourseContentHashtag_box">
+                                <ul class="courseContent_sliderCourseContentHashtagList">
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#2020비대면관광지_가을편</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#가족여행</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#강원권</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#경치좋은곳</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#계곡</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#관광지</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#비수구미계곡</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#여름여행</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#여름피서지</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#자연</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#자연좋은곳</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#피서여행</a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="courseContent_sliderCourse_wrap hidden">
+                        <section class="courseContent_sliderCourseContent_wrap">
+                            <div class="courseContent_sliderCourseContentInfo_wrap">
+                                <div class="courseContent_sliderCourseContentInfoTitle_wrap">
+                                    <div class="courseContent_sliderCourseContentInfoTitleContent_box">
+                                        <span class="courseContent_sliderCourseContentInfoSpot">spot 5</span>
+                                        <hr class="courseContent_sliderCourseContentInfoBreak">
+                                    </div>
+                                        <h4 class="courseContent_sliderCourseContentInfoTitle">
+                                            <span class="courseContent_sliderCourseContentInfoTitleText">강원도 화천군</span>
+                                            화천 반지교&아를테마수목공원
+                                        </h4>
+                                </div>
+                                <div class="courseContent_sliderCourseContentInfoText_wrap">
+                                    <div class="courseContent_sliderCourseContentInfoText_box">
+                                        <p class="courseContent_sliderCourseContentInfoTextTitle">가족끼리 힐링하기 좋은 공원</p>
+                                        <p class="courseContent_sliderCourseContentInfoTextText">아를테마수목공원은 거례리 사랑나무로 불리던 곳이 개칭한 곳이다. 수목공원은 조용하여 힐링하기에도 좋고 북한강 자전거 도로와 직접 연결되어 있어 자전거 동호회원들에게 인기가 많다. 또한 수목공원 산책로 끝에 반지 모양의 반지교가 있어 프로포즈, 커플사진을 찍기에 좋다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <section class="courseContent_sliderCourseContentImg_wrap">
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg16"></div>
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg17"></div>
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg18"></div>
+                            </section>
+                            <section class="courseContent_sliderCourseContentMoreInfo_box">
+                                <i class="fa-sharp fa-solid fa-location-dot courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">강원도 화천군 하남면 거례리 514-1</span>
+                                <i class="fa-solid fa-phone-volume courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">033-440-2575</span>
+                                <i class="fa-sharp fa-solid fa-clock courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">상시이용가능</span>
+                                <i class="fa-solid fa-house courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <a class="courseContent_sliderCourseContentMoreInfoText" href="#none">http://tour.ihc.go.kr/hb/portal</a>
+                                <i class="fa-solid fa-plane courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">휴일 : 연중개방</span>
+                                <i class="fa-solid fa-tag courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">무료</span>
+                            </section>
+                            <section class="courseContent_sliderCourseContentHashtag_box">
+                                <ul class="courseContent_sliderCourseContentHashtagList">
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#관광지</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#사진여행</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#사진찍기</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#사진촬영</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#사진촬영명소</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#산책길</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#산책하기</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#산책하기좋은곳</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#안보관광</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#연인과함께</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#커플데이트</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#휴식공간</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#휴식여행</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#휴식하기좋은곳</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#힐링산책</a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="courseContent_sliderCourse_wrap hidden">
+                        <section class="courseContent_sliderCourseContent_wrap">
+                            <div class="courseContent_sliderCourseContentInfo_wrap">
+                                <div class="courseContent_sliderCourseContentInfoTitle_wrap">
+                                    <div class="courseContent_sliderCourseContentInfoTitleContent_box">
+                                        <span class="courseContent_sliderCourseContentInfoSpot">spot 6</span>
+                                        <hr class="courseContent_sliderCourseContentInfoBreak">
+                                    </div>
+                                        <h4 class="courseContent_sliderCourseContentInfoTitle">
+                                            <span class="courseContent_sliderCourseContentInfoTitleText">강원도 인제군</span>
+                                            국립 방태산자연휴양림
+                                        </h4>
+                                </div>
+                                <div class="courseContent_sliderCourseContentInfoText_wrap">
+                                    <div class="courseContent_sliderCourseContentInfoText_box">
+                                        <p class="courseContent_sliderCourseContentInfoTextTitle">수려한 자연경관과 다양한 야생동물을 감상할 수 있는 곳</p>
+                                        <p class="courseContent_sliderCourseContentInfoTextText">한국판 노아의 방주(芳舟)라고 할 수 있는 곳이 이름 그대로 방태산이다. 芳臺山이 芳台山이 되었고 아직도 계곡에는 방대천(芳臺川)이 흐르고 있다. 방태산 정상에는 약 2톤 가량의 암석이 있었고 여기에는 수작업으로 정을 꽂아 뚫은 구멍이 있었는데 옛날 대홍수가 났을 때 이 곳에다 배를 떠내려가지 않게하기 위해 밧줄을 매달았다고 하여 그 돌을 가르켜 배달은 돌(배달은 石,해발1415.5미터)이라고 부르며, 그당시를 입증해 주기라도 하듯 방태산 정상에는 지금도 바위틈바구니의 흙이나 모래속에서 조개 껍질이 출토되고 있다고 하나 현재는 그 돌은 찾아볼 수 없다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <section class="courseContent_sliderCourseContentImg_wrap">
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg01"></div>
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg02"></div>
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg03"></div>
+                            </section>
+                            <section class="courseContent_sliderCourseContentMoreInfo_box">
+                                <i class="fa-sharp fa-solid fa-location-dot courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">강원도 인제군 방태산길 241 방태산자연휴양림</span>
+                                <i class="fa-solid fa-phone-volume courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">033-463-8590</span>
+                                <i class="fa-sharp fa-solid fa-clock courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">[숙박시설] 당일 15:00 ~ 익일 11:00</span>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">[일일개장] 09:00 ~ 18:00</span>
+                                <i class="fa-solid fa-house courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <a class="courseContent_sliderCourseContentMoreInfoText" href="#none">https://www.foresttrip.go.kr/indvz/main.do?hmpgId=0109</a>
+                                <i class="fa-solid fa-plane courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">휴일 : 화요일</span>
+                                <i class="fa-solid fa-tag courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">어른 : 개인 1,000원 / 단체 800원</span>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">청소년 : 개인 600원 / 단체 500원</span>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">어린이 - 개인 300원 / 단체 200원</span>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">※ 단체는 20명 이상</span>
+                            </section>
+                            <section class="courseContent_sliderCourseContentHashtag_box">
+                                <ul class="courseContent_sliderCourseContentHashtagList">
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#가족과함께</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#가족휴양</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#관광지</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#국립방태산자연휴양림</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#국립자연휴양림</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#방태산자연휴양림</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#자연</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#자연관광지</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#자연속으로</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#자연여행</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#자연좋은곳</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#자연환경</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#휴식공간</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#휴식여행</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#휴식하기</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#휴식하기좋은곳</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#힐링&휴양여행</a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="courseContent_sliderCourse_wrap hidden">
+                        <section class="courseContent_sliderCourseContent_wrap">
+                            <div class="courseContent_sliderCourseContentInfo_wrap">
+                                <div class="courseContent_sliderCourseContentInfoTitle_wrap">
+                                    <div class="courseContent_sliderCourseContentInfoTitleContent_box">
+                                        <span class="courseContent_sliderCourseContentInfoSpot">spot 7</span>
+                                        <hr class="courseContent_sliderCourseContentInfoBreak">
+                                    </div>
+                                        <h4 class="courseContent_sliderCourseContentInfoTitle">
+                                            <span class="courseContent_sliderCourseContentInfoTitleText">강원도 고성군</span>
+                                            고성 송지호 철새길
+                                        </h4>
+                                </div>
+                                <div class="courseContent_sliderCourseContentInfoText_wrap">
+                                    <div class="courseContent_sliderCourseContentInfoText_box">
+                                        <p class="courseContent_sliderCourseContentInfoTextTitle">분단의 역사와 아름다운 자연이 이어지는 길</p>
+                                        <p class="courseContent_sliderCourseContentInfoTextText">강원평화누리길은 북한과 맞닿아 있는 서해안 강화도에서 동해안 고성까지의 접경지역을 동서로 연결하는 트래킹, 자전거길이다. 특히 강원도 평화누리길은 철원, 화천, 양구, 인제, 고성을 관통하며 총 연장 361.2km, 20개 코스가 조성되어 있다. 분단의 역사와 아름다운 자연이 이어지는 길을 느끼고 싶다면 평화누리길을 추천한다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <section class="courseContent_sliderCourseContentImg_wrap">
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg04"></div>
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg05"></div>
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg06"></div>
+                            </section>
+                            <section class="courseContent_sliderCourseContentMoreInfo_box">
+                                <i class="fa-sharp fa-solid fa-location-dot courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">강원도 고성군 간성읍 고성중앙길 9</span>
+                                <i class="fa-solid fa-phone-volume courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">033-680-3483</span>
+                                <i class="fa-solid fa-house courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <a class="courseContent_sliderCourseContentMoreInfoText" href="#none">https://www.gwgs.go.kr/kor/index.do</a>
+                            </section>
+                            <section class="courseContent_sliderCourseContentHashtag_box">
+                                <ul class="courseContent_sliderCourseContentHashtagList">
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#강원평화누리길</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#고성군</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#레포츠</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#트레킹</a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="courseContent_sliderCourse_wrap hidden">
+                        <section class="courseContent_sliderCourseContent_wrap">
+                            <div class="courseContent_sliderCourseContentInfo_wrap">
+                                <div class="courseContent_sliderCourseContentInfoTitle_wrap">
+                                    <div class="courseContent_sliderCourseContentInfoTitleContent_box">
+                                        <span class="courseContent_sliderCourseContentInfoSpot">spot 8</span>
+                                        <hr class="courseContent_sliderCourseContentInfoBreak">
+                                    </div>
+                                        <h4 class="courseContent_sliderCourseContentInfoTitle">
+                                            <span class="courseContent_sliderCourseContentInfoTitleText">강원도 고성군</span>
+                                            고성 통일전망타워
+                                        </h4>
+                                </div>
+                                <div class="courseContent_sliderCourseContentInfoText_wrap">
+                                    <div class="courseContent_sliderCourseContentInfoText_box">
+                                        <p class="courseContent_sliderCourseContentInfoTextTitle">전쟁의 흉터 위에 서서 평화와 마주하다</p>
+                                        <p class="courseContent_sliderCourseContentInfoTextText">휴전선과 남방한계선이 만나는 해발 70m 고지의 통일전망대에 서면 금강산의 구선봉과 해금강이 지척에 보이고 맑은 날에는 옥녀봉, 채하봉, 일출봉 등을 볼 수 있다. 발 아래의 휴전선철책을 사이에 두고 대치해 있는 최전방 초소는 남북한의 긴장감을 느끼게 한다. 연간 150만 명 이상의 관광객이 찾는 고성의 대표적인 관광지인 이곳엔 북녘에 두고 온 산하와 가족을 그리는 실향민과 통일을 염원하는 이들을 위한 성모상, 미륵불상, 전진철탑 등 종교적인 부대시설과 장갑차, 탱크, 비행기 등 안보 교육용 전시물이 있다. 발 아래에는 2004년 12월 개통된 동해선 남북연결도로로 금강산육로 관광이 이루어지는 모습을 볼 수 있다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <section class="courseContent_sliderCourseContentImg_wrap">
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg10"></div>
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg11"></div>
+                                <div class="courseContent_sliderCourseContentImg_box courseContent_sliderCourseContentImg12"></div>
+                            </section>
+                            <section class="courseContent_sliderCourseContentMoreInfo_box">
+                                <i class="fa-sharp fa-solid fa-location-dot courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">강원도 고성군 현내면 금강산로 481</span>
+                                <i class="fa-solid fa-phone-volume courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">033-682-0088</span>
+                                <i class="fa-sharp fa-solid fa-clock courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">수학여행기(3월 1일 ~ 7월 14일, 8월 21일 ~ 10월 31일) : 09:00 ~ 16:50</span>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">관광성수기(7월 15일 ~ 8월 20일) : 09:00 ~ 17:50</span>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">관광비수기(11월 1일 ~ 익년 2월 28일) : 09:00 ~ 15:50</span>
+                                <i class="fa-solid fa-house courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <a class="courseContent_sliderCourseContentMoreInfoText" href="#none">http://www.tongiltour.co.kr</a>
+                                <i class="fa-solid fa-plane courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">휴일 : 연중무휴</span>
+                                <i class="fa-solid fa-tag courseContent_sliderCourseContentMoreInfoIcon" style="color: #2d58a0;"></i>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">개인 : 대인 3,000원 / 소인, 경로 1,500원</span>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">단체 : 대인 2,000원 / 소인 1,200원 / 경로 1,000원</span>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">※ 단체 30인 이상</span>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">※ 소인(초.중.고생), 경로(65세 이상)</span>
+                                <span class="courseContent_sliderCourseContentMoreInfoText">※ 6.25전쟁체험전시관 입장료 포함</span>
+                            </section>
+                            <section class="courseContent_sliderCourseContentHashtag_box">
+                                <ul class="courseContent_sliderCourseContentHashtagList">
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#가족과함께</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#강원권</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#고성가볼만한곳</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#관광지</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#교과서속여행</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#아이와함께</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#안보</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#안보관광</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#안보여행</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#역사공부</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#역사속으로</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#역사이야기</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#연중무휴</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#전망대</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#전쟁역사</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#통일전망대</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#통일전망대(고성)</a>
+                                    </li>
+                                    <li class="courseContent_sliderCourseContentHashtagListItem">
+                                        <a class="courseContent_sliderCourseContentHashtagListItemLink" href="#none">#한국전쟁</a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </section>
+                    </section>
+                </div>
+            </section>
+            <section class="courseContent_like_wrap">
+                <div class="courseContent_likeTitle_box">
+                    <b class="courseContent_likeTitle">해당 코스가 마음에 드시나요?</b>
+                    <p class="courseContent_likeText">평가를 해주시면 개인화 추천 시 활용하여 최적의 여행지를 추천해 드리겠습니다</p>
+                </div>
+                <div class="courseContent_likeIcon_box">
+                    <span class="courseContent_likeIconLike">좋아요!</span>
+                    <span class="courseContent_likeIconDislike">별로예요</span>
+                </div>
+            </section>
+            <div class="courseContent_return_wrap">
+                <a class="courseContent_returnLink" href="#none">목록</a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer"></footer>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=09bb8f5c224835fb8bed2c80c6cc6742"></script>
+    <script>
+        // 가져온 JSON 데아터를 할당하기 위한 변수들
+
+        
+
+        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(38.3236958002495, 127.76357835959058), //지도의 중심좌표.
+            level: 11 //지도의 레벨(확대, 축소 정도)
+        };
+
+        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+
+        var positions = [
+            {
+                title: '전곡선사박물관',
+                latlng: new kakao.maps.LatLng(38.011100, 127.063339)
+            },
+            {
+                title: '재인폭포 (한탄강 국가지질공원)',
+                latlng: new kakao.maps.LatLng(38.077140, 127.142708)
+            },
+            {
+                title: '철원 한탄강 주상절리길(잔도)',
+                latlng: new kakao.maps.LatLng(38.174486, 127.299884)
+            },
+            {
+                title: '비수구미마을(비수구미계곡)',
+                latlng: new kakao.maps.LatLng(38.183291, 127.847896)
+            },
+            {
+                title: '화천 반지교&아를테마 수목공원',
+                latlng: new kakao.maps.LatLng(38.071982, 127.688581)                
+            },
+            {
+                title: '국립 방태산자연휴양림',
+                latlng: new kakao.maps.LatLng(37.912736, 128.412290)
+            },
+            {
+                title: '강원평화누리길 17코스 고성 송지호 철새길',
+                latlng: new kakao.maps.LatLng(38.380643, 128.467795)
+            },
+            {
+                title: '고성 통일전망타워',
+                latlng: new kakao.maps.LatLng(38.514796, 128.417338)
+            }
+        ];
+        
+        var imageSrc = '../images/location-dot-solid_1_white.png'; 
+
+        for (var i = 0; i < positions.length; i ++) {
+    
+            // 마커 이미지의 이미지 크기 입니다
+            var imageSize = new kakao.maps.Size(34, 45); 
+            
+            // 마커 이미지를 생성합니다    
+            var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize); 
+            
+            // 마커를 생성합니다
+            var marker = new kakao.maps.Marker({
+                map: map, // 마커를 표시할 지도
+                position: positions[i].latlng, // 마커를 표시할 위치
+                title : positions[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
+                image : markerImage // 마커 이미지 
+            });
+
+            // 선을 구성하는 좌표 배열입니다. 이 좌표들을 이어서 선을 표시합니다
+            var linePath = [
+                new kakao.maps.LatLng(38.011100, 127.063339),
+                new kakao.maps.LatLng(38.077140, 127.142708),
+                new kakao.maps.LatLng(38.174486, 127.299884), 
+                new kakao.maps.LatLng(38.183291, 127.847896), 
+                new kakao.maps.LatLng(38.071982, 127.688581), 
+                new kakao.maps.LatLng(37.912736, 128.412290), 
+                new kakao.maps.LatLng(38.380643, 128.467795), 
+                new kakao.maps.LatLng(38.514796, 128.417338), 
+            ];
+
+            // 지도에 표시할 선을 생성합니다
+            var polyline = new kakao.maps.Polyline({
+                path: linePath, // 선을 구성하는 좌표배열 입니다
+                strokeWeight: 5, // 선의 두께 입니다
+                strokeColor: 'rgba(45, 88, 160, 1)', // 선의 색깔입니다
+                strokeOpacity: 0.7, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
+                strokeStyle: 'solid' // 선의 스타일입니다
+            });
+
+            // 지도에 선을 표시합니다 
+            polyline.setMap(map);  
+
+            // 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+            var content01 = '<div class="customoverlay">' +
+                '  <a href="http://kko.to/uU2Cipt5I0" target="_blank">' +
+                '    <span class="title">전곡선사박물관</span>' +
+                '    <span class="courseNumber01"></span>' +
+                '  </a>' +
+                '</div>';
+
+            // 커스텀 오버레이가 표시될 위치입니다 
+            var position01 = new kakao.maps.LatLng(38.011100, 127.063339);  
+
+            // 커스텀 오버레이를 생성합니다
+            var customOverlay01 = new kakao.maps.CustomOverlay({
+                map: map,
+                position: position01,
+                content: content01,
+                yAnchor: 1 
+            });
+
+            // 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+            var content02 = '<div class="customoverlay">' +
+                '  <a href="http://kko.to/uU2Cipt5I0" target="_blank">' +
+                '    <span class="title">재인폭포 (한탄강 국가지질공원)</span>' +
+                '    <span class="courseNumber02"></span>' +
+                '  </a>' +
+                '</div>';
+
+            // 커스텀 오버레이가 표시될 위치입니다 
+            var position02 = new kakao.maps.LatLng(38.077140, 127.142708);  
+
+            // 커스텀 오버레이를 생성합니다
+            var customOverlay02 = new kakao.maps.CustomOverlay({
+                map: map,
+                position: position02,
+                content: content02,
+                yAnchor: 1 
+            });
+
+            // 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+            var content03 = '<div class="customoverlay">' +
+                '  <a href="http://kko.to/uU2Cipt5I0" target="_blank">' +
+                '    <span class="title">철원 한탄강 주상절리길(잔도)</span>' +
+                '    <span class="courseNumber03"></span>' +
+                '  </a>' +
+                '</div>';
+
+            // 커스텀 오버레이가 표시될 위치입니다 
+            var position03 = new kakao.maps.LatLng(38.174486, 127.299884);  
+
+            // 커스텀 오버레이를 생성합니다
+            var customOverlay03 = new kakao.maps.CustomOverlay({
+                map: map,
+                position: position03,
+                content: content03,
+                yAnchor: 1 
+            });
+
+            // 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+            var content04 = '<div class="customoverlay">' +
+                '  <a href="http://kko.to/uU2Cipt5I0" target="_blank">' +
+                '    <span class="title">비수구미마을</span>' +
+                '    <span class="courseNumber04"></span>' +
+                '  </a>' +
+                '</div>';
+
+            // 커스텀 오버레이가 표시될 위치입니다 
+            var position04 = new kakao.maps.LatLng(38.183291, 127.847896);  
+
+            // 커스텀 오버레이를 생성합니다
+            var customOverlay04 = new kakao.maps.CustomOverlay({
+                map: map,
+                position: position04,
+                content: content04,
+                yAnchor: 1 
+            });
+
+            // 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+            var content05 = '<div class="customoverlay">' +
+                '  <a href="http://kko.to/uU2Cipt5I0" target="_blank">' +
+                '    <span class="title">화천 반지교&아를테마수목공원</span>' +
+                '    <span class="courseNumber05"></span>' +
+                '  </a>' +
+                '</div>';
+
+            // 커스텀 오버레이가 표시될 위치입니다 
+            var position05 = new kakao.maps.LatLng(38.071982, 127.688581);  
+
+            // 커스텀 오버레이를 생성합니다
+            var customOverlay05 = new kakao.maps.CustomOverlay({
+                map: map,
+                position: position05,
+                content: content05,
+                yAnchor: 1 
+            });
+
+            // 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+            var content06 = '<div class="customoverlay">' +
+                '  <a href="http://kko.to/uU2Cipt5I0" target="_blank">' +
+                '    <span class="title">국립 방태산자연휴양림</span>' +
+                '    <span class="courseNumber06"></span>' +
+                '  </a>' +
+                '</div>';
+
+            // 커스텀 오버레이가 표시될 위치입니다 
+            var position06 = new kakao.maps.LatLng(37.912736, 128.412290);  
+
+            // 커스텀 오버레이를 생성합니다
+            var customOverlay06 = new kakao.maps.CustomOverlay({
+                map: map,
+                position: position06,
+                content: content06,
+                yAnchor: 1 
+            });
+
+            // 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+            var content07 = '<div class="customoverlay">' +
+                '  <a href="http://kko.to/uU2Cipt5I0" target="_blank">' +
+                '    <span class="title">고성 송지호 철새길</span>' +
+                '    <span class="courseNumber07"></span>' +
+                '  </a>' +
+                '</div>';
+
+            // 커스텀 오버레이가 표시될 위치입니다 
+            var position07 = new kakao.maps.LatLng(38.380643, 128.467795);  
+
+            // 커스텀 오버레이를 생성합니다
+            var customOverlay07 = new kakao.maps.CustomOverlay({
+                map: map,
+                position: position07,
+                content: content07,
+                yAnchor: 1 
+            });
+
+            // 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+            var content08 = '<div class="customoverlay">' +
+                '  <a href="http://kko.to/uU2Cipt5I0" target="_blank">' +
+                '    <span class="title">고성 통일전망타워</span>' +
+                '    <span class="courseNumber08"></span>' +
+                '  </a>' +
+                '</div>';
+
+            // 커스텀 오버레이가 표시될 위치입니다 
+            var position08 = new kakao.maps.LatLng(38.514796, 128.417338);  
+
+            // 커스텀 오버레이를 생성합니다
+            var customOverlay08 = new kakao.maps.CustomOverlay({
+                map: map,
+                position: position08,
+                content: content08,
+                yAnchor: 1 
+            });
+
+            // var sw = new kakao.maps.LatLng(33.448842, 126.570379), // 사각형 영역의 남서쪽 좌표
+            //     ne = new kakao.maps.LatLng(33.450026,  126.568556); // 사각형 영역의 북동쪽 좌표
+            }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        // $(".gnb_1dp > li").mouseover(function () {
+        //     $(".gnb_2dp_bg").stop().slideUp(100);
+        //     $(this).find(".gnb_2dp_bg").stop().slideDown("fast");
+        // })
+
+        // $(".main").mouseover(function () {
+        //     $(".gnb_2dp_bg").stop().slideUp(100);
+        // })
+    </script>
+    <script>
+        $(".header").load("C:\Users\Administrator.User -2023XUCTP\Desktop\킹갓한국민국 구석구석\header.html");
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 4,
+            slidesPerGroup: 3,
+            loop: false,
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+
+        swiper.on('slideChange', function(){
+            const prevButton = document.querySelector('.swiper-button-prev');
+            const nextButton = document.querySelector('.swiper-button-next');
+            
+            if(swiper.activeIndex === 0){
+                prevButton.classList.add('swiper-button-disabled');
+            } else {
+                prevButton.classList.remove('swiper-button-disabled');
+            }
+
+            if(swiper.activeIndex >= 3){
+                nextButton.classList.add('swiper-button-disabled');
+            } else{
+                nextButton.classList.remove('swiper-button-disabled');
+            }
+        });
+
+        const sliderLinks = document.querySelectorAll('.slide-link');
+        const sliderItems = document.querySelectorAll('.swiper-slide');
+        const sliderCourses = document.querySelectorAll('.slide-course');
+        const sliderContents = document.querySelectorAll('.courseContent_sliderCourse_wrap');
+        const mapCustomOverlays = document.querySelectorAll('.customoverlay');
+        const mapCustomOverlaysTitles = document.querySelectorAll('.title')
+        const slideLinkTitles = document.querySelectorAll('.slide-linkCourse');
+        
+        sliderLinks.forEach((sliderLink, index)=>{
+            sliderLink.addEventListener('click', () => {
+                sliderItems.forEach((sliderItem, i)=>{
+                    sliderItem.classList.remove('swiper-slide--off');
+                    sliderItem.classList.remove('swiper-slide--on');
+                    sliderContents[i].classList.add('hidden');
+                    
+                if (i === index) {
+                    sliderLink.classList.add('slide-link--on')
+                    sliderItem.classList.add('swiper-slide--on');
+                    sliderCourses[i].classList.add('slide-course--on');
+                    sliderContents[i].classList.remove('hidden');
+                } else if(i < index) {
+                    sliderItem.classList.add('swiper-slide--off');
+                    sliderLinks[i].classList.remove('slide-link--on');
+                    sliderCourses[i].classList.add('slide-course--on');
+                } else{
+                    sliderItem.classList.remove('swiper-slide--off');
+                    sliderCourses[i].classList.remove('slide-course--on');
+                    sliderLinks[i].classList.remove('slide-link--on');
+                }
+                })
+            })
+        })
+
+        mapCustomOverlays.forEach((mapCustomOverlay, index)=>{
+            mapCustomOverlay.classList.add('invisible');
+        })
+
+        sliderLinks.forEach((sliderLink, index)=>{
+            sliderLink.addEventListener('click', () => {
+                mapCustomOverlaysTitles.forEach((mapCustomOverlaysTitle, ind)=>{
+                    if(slideLinkTitles[index].textContent == mapCustomOverlaysTitle.textContent){
+                        mapCustomOverlays[ind].classList.remove('invisible');
+                    } else{
+                        mapCustomOverlays[ind].classList.add('invisible');
+                    }
+                })
+            })
+        })
+
+        // 클릭시 좋아요! 별로예요 색깔 바뀌기
+        const likeButton = document.querySelector(".courseContent_likeIconLike");
+        const dislikeButton = document.querySelector(".courseContent_likeIconDislike");
+        typeof likeButton.className;
+        console.log(likeButton.className);
+        console.log(dislikeButton.className);
+
+        likeButton.addEventListener('click', function(){
+            dislikeButton.classList.remove('courseContent_likeIconDislike--on')
+            dislikeButton.classList.add('courseContent_likeIconDislike')
+            if(likeButton.className == "courseContent_likeIconLike"){
+                likeButton.classList.remove('courseContent_likeIconLike')
+                likeButton.classList.add('courseContent_likeIconLike--on')
+            } else{
+                likeButton.classList.remove('courseContent_likeIconLike--on')
+                likeButton.classList.add('courseContent_likeIconLike')
+            }
+        })
+
+        dislikeButton.addEventListener('click', function(){
+            likeButton.classList.remove('courseContent_likeIconLike--on');
+            likeButton.classList.add('courseContent_likeIconLike');
+            if(dislikeButton.className == "courseContent_likeIconDislike"){
+                dislikeButton.classList.remove('courseContent_likeIconDislike')
+                dislikeButton.classList.add('courseContent_likeIconDislike--on')
+            } else{
+                dislikeButton.classList.remove('courseContent_likeIconDislike--on')
+                dislikeButton.classList.add('courseContent_likeIconDislike')
+            }
+        })
+
+
+
+        
+
+
+
+    </script>
+    <script>
+            $(".header").load("../../header/header.html");
+            //Footer
+            $(".footer").load("../../footer/footer.html");
+
+    </script>
+</body>
+</html>

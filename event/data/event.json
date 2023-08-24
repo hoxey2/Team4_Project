@@ -1,0 +1,204 @@
+{
+    "data" : [
+        {
+            "index": 1,
+            "title" : "2023 대한민국 관광공모전(사진) 개최",
+            "content" :"2023 대한민국 관광공모전",
+            "img":"../images/event1.png",
+            "link" :"https://kto.visitkorea.or.kr/kor/notice/compe/photo.kto",
+            "eventStatus":"ing",
+            "createdBy":"콘텐츠관리자",
+            "createdAt":"2023-05-17"
+        },
+        {
+            "index": 2,
+            "title" : "하이커와 함께 하는 특별한 5월! <하이커로 여행가정>",
+            "content" :"하이커와 함께 하는 봄",
+            "img":"../images/event2.png",
+            "link":"https://korean.visitkorea.or.kr/detail/event_detail.do?cotid=6d827e37-8013-46b3-8193-46ee5ac6213f",
+            "eventStatus":"due",
+            "createdBy":"콘텐츠관리자",
+            "createdAt":"2023-05-17"
+        },
+        {
+            "index": 3,
+            "title" : "[대한민국구석구석 X 순천시] 2023순천만국제정원박람회",
+            "content" :"2023순천만국제정원박람회 응원해주리오~!",
+            "img":"../images/event3.png",
+            "link":"https://korean.visitkorea.or.kr/detail/event_detail.do?cotid=1692b9ec-9c2d-4182-bcfb-0d84f937e97d",
+            "eventStatus":"complete",
+            "createdBy":"콘텐츠관리자",
+            "createdAt":"2023-05-17"
+        },
+        {
+            "index": 4,
+            "title" : "왔어울산 신규가입 선착순 쿠폰 이벤트",
+            "content" :"왔어울산 신규가입 선착순 쿠폰 이벤트",
+            "img":"../images/event4.png",
+            "link":"https://whataulsan.com/",
+            "eventStatus":"ing",
+            "createdBy":"관리자",
+            "createdAt":"2023-05-15"
+        },
+        {
+            "index": 5,
+            "title" : "오늘 축제 완료하고 상품받자~!",
+            "content" :"문화관광축제 방문하고 축제 홈페이지에서 축제",
+            "img":"../images/event5.png",
+            "link":"http://ktolanding.cafe24.com/new/landing.php",
+            "eventStatus":"ing",
+            "createdBy":"관리자",
+            "createdAt":"2023-05-14"
+        },
+        {
+            "index": 6,
+            "title" : "2023 관광데이터 활용 공모전",
+            "content" :"2023 관광데이터 활용 공모전",
+            "img":"../images/event6.png",
+            "link":"http://www.2023tourapi.com/",
+            "eventStatus":"ing",
+            "createdBy":"관리자",
+            "createdAt":"2023-04-11"
+        },
+        {
+            "index": 7,
+            "title" : "2023 찾아가고 싶은 섬 <봄X섬 인증샷 이벤트>",
+            "content" :"2023 찾아가고 싶은 섬 봄X섬",
+            "img":"../images/event7.png",
+            "link":"https://korean.visitkorea.or.kr/detail/event_detail.do?cotid=44ab3684-e682-4050-ac4e-c763713e04a1",
+            "eventStatus":"ing",
+            "createdBy":"관리자",
+            "createdAt":"2023-04-08"
+        },
+        {
+            "index": 8,
+            "title" : "한국관광 데이터랩 모의고사 이벤트",
+            "content" :"누구나 풀 수 있는한국관광 데이터랩 모의고사 이벤트",
+            "img":"../images/event8.png",
+            "link":"https://datalab.visitkorea.or.kr/site/portal/ex/bbs/View.do?cbIdx=1135&bcIdx=303940",
+            "eventStatus":"complete",
+            "createdBy":"관리자",
+            "createdAt":"2023-04-08"
+        },
+        {
+            "index": 9,
+            "title" : "한국 야간관광 BI 선호도 조사 이벤트",
+            "content" :"한국 야간관광을 대표할 BI를 선택해 주세요!",
+            "img":"../images/event9.png",
+            "link":"https://korean.visitkorea.or.kr/detail/event_detail.do?cotid=fb98e49b-2e76-44cf-b35c-b1a27280f21f",
+            "eventStatus":"ing",
+            "createdBy":"관리자",
+            "createdAt":"2023-04-04"
+        },
+        {
+            "index": 10,
+            "title" : "제25회 함평나비대축제 퀴즈&방문후기 이벤트",
+            "content" :"퀴즈&방문 후기 이벤트 추첨을 통해 선물을 드려요!",
+            "img":"../images/event10.png",
+            "link":"https://korean.visitkorea.or.kr/detail/event_detail.do?cotid=90d0f57a-ee79-47cc-a909-0cfa4aca302a",
+            "eventStatus":"ing",
+            "createdBy":"관리자",
+            "createdAt":"2023-04-03"
+        },
+        {
+            "index": 11,
+            "title" : "[하이커 그라운드] 나를 위한 어린(른)이날 선물! ",
+            "content" :"하이커가 받고 싶은 어린(른)이날 선물은?! ",
+            "img":"../images/event11.png",
+            "link":"https://korean.visitkorea.or.kr/detail/event_detail.do?cotid=f80a6aa5-66b7-4bda-ad9d-9988b66cdbd1",
+            "eventStatus":"due",
+            "createdBy":"관리자",
+            "createdAt":"2023-04-02"
+        },
+        {
+            "index": 12,
+            "title" : "오디 봄꽃 여행 발도장 이벤트",
+            "content" :"봄에 오디 들어 봄~?",
+            "img":"../images/event12.png",
+            "link":"https://korean.visitkorea.or.kr/detail/event_detail.do?cotid=4ad09d9e-fff8-495c-bba2-0f215ebc2987",
+            "eventStatus":"ing",
+            "createdBy":"관리자",
+            "createdAt":"2023-04-01"
+        },
+        {
+            "index": 13,
+            "title" : "한국관광공사 X 대한민국 구석구석 <한국 야간관광 키워드 이벤트>",
+            "content" :"한국 야간관광 키워드 이벤트",
+            "img":"../images/event13.jpg",
+            "link":"https://form.office.naver.com/form/responseView.cmd?formkey=NDRiNjk4MWUtODVmNy00MzA2LTg3OGItOWI1Zjc1Yzc2YTJk&sourceId=urlshare",
+            "eventStatus":"ing",
+            "createdBy":"관리자",
+            "createdAt":"2023-04-01"
+        },
+        {
+            "index": 14,
+            "title" : "터치수원과 함께하는 수원 숙박, 모빌리티 할인이벤트",
+            "content" :"",
+            "img":"../images/event14.png",
+            "link":"https://www.suwon.go.kr/web/board/BD_board.view.do?bbsCd=1042&seq=20221220170217262&",
+            "eventStatus":"ing",
+            "createdBy":"관리자",
+            "createdAt":"2023-04-01"
+        },
+        {
+            "index": 15,
+            "title" : "추운 겨울 오딩이와 함께하는 따뜻한 온천 여행 퀴즈 이벤트",
+            "content" :"가족과 함께 피로를 풀 수 있는 온천 여행지로 떠나 볼까요?",
+            "img":"../images/event15.png",
+            "link":"https://korean.visitkorea.or.kr/detail/event_detail.do?cotid=6772b560-b87c-4b25-8ba3-353a508f44e4",
+            "eventStatus":"ing",
+            "createdBy":"관리자",
+            "createdAt":"2023-03-31"
+        },
+        {
+            "index": 16,
+            "title" : "2022 대한민국 관광공모전［사진］수상작 선정 기념 이벤트",
+            "content" :"이 사진따라 여행하길",
+            "img":"../images/event16.png",
+            "link":"https://korean.visitkorea.or.kr/detail/event_detail.do?cotid=0f61468b-c59d-4f7f-9dc9-30f972bc906f",
+            "eventStatus":"complete",
+            "createdBy":"관리자",
+            "createdAt":"2022-12-30"
+        },
+        {
+            "index": 17,
+            "title" : "KTO&RTO와 함께하는 청렴 바로알기 이벤트",
+            "content" :"청렴 바로알기",
+            "img":"../images/event17.png",
+            "link":"https://korean.visitkorea.or.kr/detail/event_detail.do?cotid=6a651acc-bba2-481b-966d-ce1f3e9e54c5",
+            "eventStatus":"complete",
+            "createdBy":"관리자",
+            "createdAt":"2023-2-28"
+        },
+        {
+            "index": 18,
+            "title" : "유원시설 안전수칙 빈칸 이벤트",
+            "content" :"유원시설 안전수칙, 어디까지 알고 있니?",
+            "img":"../images/event18.png",
+            "link":"https://www.apa.or.kr/portal/bbs142/bbsView.do?selectedSn=247&bbsMsg=&csrf=&searchBbsSn=142&cttSearchCondition=title&cttSearchKeyword=&pageIndex=1",
+            "eventStatus":"complete",
+            "createdBy":"관리자",
+            "createdAt":"2023-04-17"
+        },
+        {
+            "index": 19,
+            "title" : "뮤지컬 「원더티켓 - 수호나무의 부활」 유튜브 댓글 이벤트",
+            "content" :"유튜브 댓글이벤트",
+            "img":"../images/event19.png",
+            "link":"https://korean.visitkorea.or.kr/detail/event_detail.do?cotid=2cf06a9a-cf9e-471c-992c-d439a197e145",
+            "eventStatus":"complete",
+            "createdBy":"관리자",
+            "createdAt":"2023-04-08"
+        },
+        {
+            "index": 20,
+            "title" : "한국관광공사 X U+DIVE 실감형 콘텐츠 시청 이벤트",
+            "content" :"실감컨텐츠로 국내여행 하세요!",
+            "img":"../images/event20.png",
+            "link":"https://korean.visitkorea.or.kr/detail/event_detail.do?cotid=e33cc821-4f9a-49bc-ad68-82cc03056015",
+            "eventStatus":"complete",
+            "createdBy":"관리자",
+            "createdAt":"2023-04-08"
+        }
+    ]
+}
